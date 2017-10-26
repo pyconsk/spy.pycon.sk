@@ -10,17 +10,14 @@ html, body, main, .section {
   z-index: 5;
 }
 
-nav .logo {
+nav {
   height: 2.5em;
+  box-shadow: 0px 0px 15px black;
 }
 
 .logo {
   float: left;
-  margin-top: 5px;
-}
-
-.section {
-  border-top: 1px solid #888;
+  margin-top: 1px;
 }
 
 .section#home, .section#team, .section#contact {
@@ -29,28 +26,34 @@ nav .logo {
   -webkit-background-size: cover;
   background-attachment: scroll;
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .section#home {
-  background: white url('../img/backgrounds/volunteers.jpg') no-repeat center center fixed;
+  background: white url('../img/backgrounds/volunteers.jpg');
+  background-attachment: fixed;
 }
 
 .section#team {
-  background: white url('../img/backgrounds/django.jpg') no-repeat center center fixed;
+  background: white url('../img/backgrounds/django.jpg');
+  background-attachment: fixed;
 }
 
 .section#contact {
-  background: white url('../img/backgrounds/preparations.jpg') no-repeat center center fixed;
+  background: white url('../img/backgrounds/preparations.jpg');
+  background-attachment: fixed;
 }
 
 .content {
-  position: relative;
+  position: static;
 }
 
 .content-text {
+  border: 1px solid #888;
   text-align: justify;
-  width: 60%;
-  margin: auto;
+  width: 75%;
+  margin: 4em auto;
   background-color: rgba(255,255,255,0.80);
   color: #000;
   padding-top: 10px;
@@ -83,6 +86,7 @@ footer {
   border-top: 1px solid #888;
   z-index: 3;
   background-color: rgba(255, 255, 255, 0.90);
+  box-shadow: 0px 0px 15px black;
 }
 
 .footer {
@@ -124,15 +128,18 @@ footer {
 
 @media (max-width: 900px) {
   .section#home {
-    background: white url('../img/backgrounds/volunteers_medium.jpg') no-repeat center center fixed;
+    background: white url('../img/backgrounds/volunteers_medium.jpg');
+    background-attachment: fixed;
   }
 
   .section#team {
-    background: white url('../img/backgrounds/django_medium.jpg') no-repeat center center fixed;
+    background: white url('../img/backgrounds/django_medium.jpg');
+    background-attachment: fixed;
   }
 
   .section#contact {
-    background: white url('../img/backgrounds/preparations_medium.jpg') no-repeat center center fixed;
+    background: white url('../img/backgrounds/preparations_medium.jpg');
+    background-attachment:fixed;
   }
 
   .hide-900 {
@@ -142,15 +149,18 @@ footer {
 
 @media (max-width: 500px) {
   .section#home {
-    background: white url('../img/backgrounds/volunteers_small.jpg') no-repeat center center fixed;
+    background: white url('../img/backgrounds/volunteers_small.jpg');
+    background-attachment: fixed;
   }
 
   .section#team {
-    background: white url('../img/backgrounds/django_small.jpg') no-repeat center center fixed;
+    background: white url('../img/backgrounds/django_small.jpg');
+    background-attachment: fixed;
   }
 
   .section#contact {
-    background: white url('../img/backgrounds/preparations_small.jpg') no-repeat center center fixed;
+    background: white url('../img/backgrounds/preparations_small.jpg');
+    background-attachment: fixed;
   }
 
   .hide-500 {
