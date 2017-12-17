@@ -1,0 +1,173 @@
+# Slovak translations for spy.pycon.sk.
+# Copyright (C) 2017 SPy o.z.
+# This file is distributed under the same license as the spy.pycon.sk
+# project.
+# FIRST AUTHOR <richard.kellner@pycon.sk>, 2017.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2017-12-17 21:04+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: sk\n"
+"Language-Team: sk <LL@li.org>\n"
+"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+
+#: templates/body.html:8 templates/body.html:19 templates/body.html:26
+msgid ""
+"SPy o.z. is civic association founded to support developers and users of "
+"the Python programming language in Slovakia."
+msgstr ""
+"SPy je občianske združenie, založené na podporu vývojárov a používateľov "
+"programovacieho jazyka Python na Slovensku."
+
+#: templates/body.html:67
+msgid "Team"
+msgstr "Tím"
+
+#: templates/body.html:68
+msgid "Contact"
+msgstr "Kontakt"
+
+#: templates/body.html:106
+msgid ""
+"content licensed under <a "
+"href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
+"                                        class=\"external\">CC-BY</a>,\n"
+"        except members avatars."
+msgstr ""
+
+#: templates/body.html:108
+msgid ""
+"Please consult with each SPy member, if you would like to use their "
+"avatar."
+msgstr ""
+
+#: templates/index.html:7
+msgid "About Us"
+msgstr "O Nás"
+
+#: templates/index.html:8
+msgid ""
+"The mission of the SPy civic association is to support developers and "
+"users of the Python programming\n"
+"        language. We support and we spread the programming language "
+"Python and other open source technologies and open\n"
+"        source ideas in our society."
+msgstr ""
+"Poslaním občianskeho združenia SPy je podpora vývojárov a používateľov "
+"programovacieho jazyka Python. Podporujeme a šírime používanie "
+"programovacieho jazyka Python a iných open source technológii a open "
+"source myšlienok v našej spoločnosti."
+
+#: templates/index.html:12
+msgid ""
+"Our goal is to provide help and support for beginners and people who are "
+"new to programming. Another goal\n"
+"        is to work with schools and other educational institutions, and "
+"promote programming (independent of the\n"
+"        programming language) in children and young people from the "
+"earliest age."
+msgstr ""
+"Našim cieľom je poskytovať pomoc a podporu úplným začiatočníkom a ľuďom, "
+"ktorí s programovaním začínajú. Ďalej si dávame za cieľ spolupracovať so "
+"školami a inými vzdelávacími inštitúciami a propagovať programovanie "
+"(nezávislé od programovacieho jazyka) u detí a mladých ľudí od čo "
+"najskoršieho možného veku."
+
+#: templates/index.html:17
+msgid ""
+"We support the area of software development in socially vulnerable or "
+"otherwise disadvantaged social\n"
+"        groups. We are dedicated to practical use of software development."
+msgstr ""
+"Podporujeme oblasť softvérového vývoja u sociálne slabších alebo inak "
+"znevýhodnených sociálnych skupín. Venujeme sa praktickému využitiu "
+"softvérového vývoja."
+
+#: templates/index.html:21
+msgid ""
+"We want to work on various open source projects, to create open "
+"educational content for use in schools as\n"
+"        well as self-study and advocate for the use of open technologies "
+"in society and the public sector."
+msgstr ""
+"Chceme spolupracovať na rôznych open source projektoch, vytvárať otvorený"
+" vzdelávací obsah použiteľný pri školskej výuke či samoštúdiu a "
+"zasadzovať sa o používanie otvorených technológii v spoločnosti a "
+"verejnom sektore."
+
+#: templates/index.html:38
+msgid "Chairman"
+msgstr "Predseda"
+
+#: templates/index.html:46
+msgid "Vice-Chairman"
+msgstr "Pod-Predseda"
+
+#: templates/index.html:55
+msgid "Auditor"
+msgstr "Kontrolór"
+
+#: templates/index.html:104
+msgid "Address"
+msgstr "Adresa"
+
+#: templates/index.html:109
+msgid "Slovak Republic"
+msgstr "Slovenská Republika"
+
+#: templates/index.html:113
+msgid "Legal details"
+msgstr "Právna forma"
+
+#: templates/index.html:115
+msgid "Company ID"
+msgstr "IČO"
+
+#: templates/index.html:116
+msgid "Registered at the Ministry of Interior"
+msgstr "Registrované na MVSR"
+
+#: templates/index.html:117
+msgid "Registry number"
+msgstr "Číslo spisu"
+
+#: templates/index.html:118
+msgid "Bylaws"
+msgstr "Stanovy"
+
+#: templates/index.html:126
+msgid "Bank details"
+msgstr "Bankové spojenie"
+
+#: templates/index.html:128
+msgid "Account name"
+msgstr "Názov účtu"
+
+#: templates/index.html:129
+msgid "Bank name"
+msgstr "Názov banky"
+
+#: templates/index.html:130
+msgid "Bank account EUR (SK)"
+msgstr "Číslo účtu EUR (SK)"
+
+#: templates/index.html:131
+msgid "Bank account EUR (CZ)"
+msgstr "Číslo účtu EUR (CZ)"
+
+#: templates/index.html:132
+msgid "Bank account EUR (IBAN)"
+msgstr "Číslo účtu EUR (IBAN)"
+
+#: templates/index.html:133
+msgid "SWIFT/BIC"
+msgstr ""
+
