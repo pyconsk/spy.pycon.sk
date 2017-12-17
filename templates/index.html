@@ -1,0 +1,141 @@
+{% extends "body.html" %}
+{% block content %}
+<!-- Content -->
+<div class="section" id="home">
+  <div class="content">
+    <div class="content-text">
+      <h3>{{ _('About Us') }}</h3>
+      <p>{{ _('The mission of the SPy civic association is to support developers and users of the Python programming
+        language. We support and we spread the programming language Python and other open source technologies and open
+        source ideas in our society.') }}
+      </p>
+      <p>{{ _('Our goal is to provide help and support for beginners and people who are new to programming. Another goal
+        is to work with schools and other educational institutions, and promote programming (independent of the
+        programming language) in children and young people from the earliest age.') }}
+
+      </p>
+      <p>{{ _('We support the area of software development in socially vulnerable or otherwise disadvantaged social
+        groups. We are dedicated to practical use of software development.') }}
+
+      </p>
+      <p>{{ _('We want to work on various open source projects, to create open educational content for use in schools as
+        well as self-study and advocate for the use of open technologies in society and the public sector.') }}
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="team">
+  <div class="content">
+    <div class="content-text">
+      <div class="flex one two-500 three-900 center demo">
+
+        <div>
+          <a href="https://sk.linkedin.com/in/richardkellner" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/ricco.jpg') }}" alt="Richard Kellner avatar" class="avatar"/><br/>Richard Kellner
+          </a>
+          <br/>
+          <small>{{ _('Chairman') }}</small>
+        </div>
+
+        <div>
+          <a href="https://sk.linkedin.com/in/marekmansell" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/marekmansell.jpg') }}" alt="Marek Mansell" class="avatar"/><br/>Marek Mansell
+          </a>
+          <br/>
+          <small>{{ _('Vice-Chairman') }}</small>
+        </div>
+
+        <div>
+          <svg width="200" height="200">
+            <image xlink:href="{{ url_for('static', filename='img/logo/spy-logo.svg') }}" src="{{ url_for('static', filename='img/logo/spy-logo.png') }}" width="200" height="200"/>
+          </svg>
+          <br/>
+          Daniel Kontšek<br/>
+          <small>{{ _('Auditor') }}</small>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/jangondol" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/jangondol.jpg') }}" alt="Ján Gondoľ" class="avatar"/><br/>
+            Ján Gondoľ
+          </a>
+        </div>
+
+        <div>
+          <a href="https://sk.linkedin.com/in/mnalevanko" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/MNalevankoSQ.jpg') }}" alt="Michal Nalevanko" class="avatar"/><br/>
+            Michal Nalevanko
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/tomas-pytel/" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/tomas_pytel.jpg') }}" alt="Tomas Pytel" class="avatar"/><br/>
+            Tomáš Pytel
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/juraj-bezrucka-5651a1b/" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/mimmon.jpg') }}" alt="Juraj M. Bezručka" class="avatar"/><br/>
+            Juraj M. Bezručka
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/evameszarosova/" target="_blank">
+            <img src="{{ url_for('static', filename='img/avatar/klimekova.jpg') }}" alt="Eva Klimeková" class="avatar"/><br/>
+            Eva Klimeková
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <div class="content">
+    <div class="content-text">
+
+      <div class="flex one two-500 center demo">
+        <div>
+          <h2><i class="fa fa-home" aria-hidden="true"></i> {{ _('Address') }}</h2>
+          <p>
+            SPy o.z.<br/>
+            Sibírska 1599/21<br/>
+            Bratislava-Nové Mesto,<br/>
+            {{ _('Slovak Republic') }}
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa fa-gavel" aria-hidden="true"></i> {{ _('Legal details') }}</h2>
+          <p>
+            {{ _('Company ID') }}: 48412627<br/>
+            {{ _('Registered at the Ministry of Interior') }}: 26.8.2015<br/>
+            {{ _('Registry number') }}: VVS/1-900/90-466 95<br/>
+            {{ _('Bylaws') }}: <a href="download/SPy_stanovy.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            PDF</a>{% if lang_code == 'en' %}<small>(SK)</small>{% endif %}
+          </p>
+        </div>
+      </div>
+      <div class="flex one two-900 center demo">
+        <div>
+          <h2><i class="fa fa-university" aria-hidden="true"></i> {{ _('Bank details') }}</h2>
+          <p>
+            {{ _('Account name') }}: SPy<br/>
+            {{ _('Bank name') }}: Fio banka, a. s., pobočka zahraničnej banky<br/>
+            {{ _('Bank account EUR (SK)') }}: 2300870269/8330<br/>
+            {{ _('Bank account EUR (CZ)') }}: 2300870269/2010<br/>
+            {{ _('Bank account EUR (IBAN)') }}: SK48 8330 0000 0023 0087 0269<br/>
+            {{ _('SWIFT/BIC') }}: FIOZSKBAXXX
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Content End -->
+{% endblock %}
+
