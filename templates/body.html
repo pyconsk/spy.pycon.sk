@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="{% if lang_code %}{{ lang_code }}{% else %}sk{% endif %}">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+        content="{{ _('SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.') }}">
+  <meta name="author" content="Richard Kellner, SPy o.z.">
+  <title>{{ title }}</title>
+
+  <!-- You Promised Me Mars Colonies. Instead, I Got Facebook (Buzz Aldrin) -->
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@pyconsk">
+  <meta name="twitter:creator" content="@pyconsk">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SPy o.z.">
+  <meta name="twitter:description"
+        content="{{ _('SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.' ) }}">
+  <meta name="twitter:image" content="https://spy.python.sk/static/img/logo/spy-logo.png">
+  <meta name="twitter:url" content="https://spy.python.sk">
+  <!-- Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SPy o.z.">
+  <meta property="og:description"
+        content="{{ _('SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.') }}">
+  <meta property="og:site_name" content="spy.python.sk">
+  <meta property="og:image" content="https://spy.python.sk/static/img/logo/spy-logo.png">
+  <meta property="og:url" content="https://spy.python.sk">
+
+  <!-- CSS -->
+  <link href="{{ url_for('static', filename='css/picnic.min.css') }}" type="text/css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/spy.min.css') }}?v=2" type="text/css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="{{ url_for('static', filename='js/analytics.min.js') }}"></script>
+  {% block header %}{% endblock %}
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo/spy-logo.png') }}">
+  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo/spy-logo.png') }}">
+  {#
+  <link rel="icon" href="{{ url_for('static', filename='img/logo/favicon.ico') }}" sizes="16x16">
+  #}
+  {% if lang_code == 'sk' %}
+  <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/en', 1) }}" hreflang="en">
+  {% else %}
+  <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/sk', 1) }}" hreflang="sk">
+  {% endif %}
+  <link rel="canonical" href="https://2018.pycon.sk{{ request.path }}"/>
+</head>
+<body>
+
+<!-- Header: fixed navbar -->
+<nav class="transparent">
+  <svg width="44" height="44" class="logo">
+    <image xlink:href="{{ url_for('static', filename='img/logo/spy-logo.svg') }}"
+           src="{{ url_for('static', filename='img/logo/spy-logo.png') }}" width="44" height="44"/>
+  </svg>
+  <a href="#home" class="brand">SPy o.z.</a>
+
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button" id="menu">menu</label>
+
+  <div class="menu">
+    {% block nav %}
+    <a href="#team" class="pseudo button">{{ _('Team') }}</a>
+    <a href="#contact" class="pseudo button">{{ _('Contact') }}</a>
+    <a href="https://www.pycon.sk/" class="pseudo button external">PyCon SK</a>
+    {% endblock %}
+    {% if lang_code == 'sk' %}
+    <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" title="Switch to english language"
+       hreflang="en"><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC"
+        alt="english language"></a>
+    {% else %}
+    <a href="{{ request.path|replace('/'+lang_code, '/sk', 1) }}" title="Prepnúť na slovenský jazyk"
+       hreflang="sk"><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAB5klEQVQ4jZ2TPWhUURCFv7k/+7Ivu5ts/rRYNEIEGyshhY2dNhbaiQYhVYTFajt7C1sLCxttLKxEERUEU9gICwZBCw0xxkIUYYMrJpt9792xeE8TJWri4Q5cuJwzM/fMCL9C2Bn0J6HZbOKcQ2Sn3EJBlTRNYXFx8aX+J9rt9m3T7XbjXaXegqWlpZrZ2s9uYYxRMzZUAmBl5iLPbYNPV66xUJ5kYWDynwL1qsftP3kPJt7zpvaV8Qsz1M+ewowP021dYnr2Me0Xn8EWDAFUIQPEQ+cpLqp6NmKHzRKiQ1P4pIcfqWOqg9QqjspwCW9zh1QF1UBQIcOQrHuMBoUs5V1lL0mrxa2bz1g5N8dYPeLVqsEaEJEi2IyiINeXMqSeq3tOcPfYcZhfg+nrnD/i+bjQA1/dLD8ULQCoA1tG7kzse3s4GjzQT1KWT89yZvUoc40OzUeX6a/18nRs8UoF0QwflPvfvjx0WrVksQVxTM3fYPngE7oPVlh3MdT8b/+u+VGQoIix4kpDAReHYpQjOqsfYGwAJ2F77zRX8AEiq8bZWiajIwlJZlCRotbsz+aLIKpEomiaBqmMjk/F5ahR8j5fKmtzv7bJjSohBLI0pZ8k9HobrwWRfIdFyG9/m2xBf7yroqp8B5ko65x3W9PSAAAAAElFTkSuQmCC"
+        alt="slovenský jazyk"></a>
+    {% endif %}
+  </div>
+</nav>
+
+<!-- Content -->
+<main>
+  {% block content %}{% endblock %}
+  {% block footer %}
+  <footer>
+    <div class="footer">
+      <p class="socka">
+        &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="fa fa-facebook" aria-hidden="true"></i>
+        <span class="hide-900">Facebook</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="fa fa-twitter" aria-hidden="true"></i>
+        <span class="hide-900">Twitter</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="fa fa-linkedin"
+                                                                                       aria-hidden="true"></i>
+        <span class="hide-900">LinkedIn</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts"
+                 class="external"><i class="fa fa-google-plus" aria-hidden="true"></i>
+        <span class="hide-900">Google+</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="fa fa-github" aria-hidden="true"></i>
+        <span class="hide-900">GitHub</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://riot.python.sk" class="external"><i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="hide-900">riot.python.sk</span></a>
+      </p>
+      <p class="copyleft">
+        <i class="fa fa-creative-commons" aria-hidden="true"></i> 2015-2017 <a href="https://spy.pycon.sk">SPy o.z.</a>,
+        {{ _('content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
+                                        class="external">CC-BY</a>,
+        except members avatars.') }}<span class="hide-900"> {{ _('Please consult with each SPy member, if you would like to use their avatar.') }}</span>
+      </p>
+    </div>
+  </footer>
+  {% endblock %}
+</main>
+
+</body>
+</html>
