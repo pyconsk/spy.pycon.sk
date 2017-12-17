@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description"
+        content="SPy je občianske združenie, založené na podporu vývojárov a používateľov programovacieho jazyka Python na Slovensku.">
+  <meta name="author" content="Richard Kellner, SPy o.z.">
+  <title>PyCon SK</title>
+
+  <!-- You Promised Me Mars Colonies. Instead, I Got Facebook (Buzz Aldrin) -->
+  <!-- Twitter -->
+  <meta name="twitter:site" content="@pyconsk">
+  <meta name="twitter:creator" content="@pyconsk">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="SPy o.z.">
+  <meta name="twitter:description"
+        content="SPy je občianske združenie, založené na podporu vývojárov a používateľov programovacieho jazyka Python na Slovensku.">
+  <meta name="twitter:image" content="https://spy.python.sk/static/img/logo/spy-logo.png">
+  <meta name="twitter:url" content="https://spy.python.sk">
+  <!-- Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="SPy o.z.">
+  <meta property="og:description"
+        content="SPy je občianske združenie, založené na podporu vývojárov a používateľov programovacieho jazyka Python na Slovensku.">
+  <meta property="og:site_name" content="spy.python.sk">
+  <meta property="og:image" content="https://spy.python.sk/static/img/logo/spy-logo.png">
+  <meta property="og:url" content="https://spy.python.sk">
+
+  <!-- CSS -->
+  <link href="/static/css/picnic.min.css" type="text/css" rel="stylesheet">
+  <link href="/static/css/spy.min.css?v=2" type="text/css" rel="stylesheet">
+  <link href="/static/css/font-awesome.min.css" type="text/css" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="/static/js/analytics.min.js"></script>
+  
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" href="/static/img/logo/spy-logo.png">
+  <link rel="icon" type="image/png" href="/static/img/logo/spy-logo.png">
+  
+  
+  <link rel="alternate" href="https://2018.pycon.sk/en/index.html" hreflang="en">
+  
+  <link rel="canonical" href="https://2018.pycon.sk/sk/index.html"/>
+</head>
+<body>
+
+<!-- Header: fixed navbar -->
+<nav class="transparent">
+  <svg width="44" height="44" class="logo">
+    <image xlink:href="/static/img/logo/spy-logo.svg"
+           src="/static/img/logo/spy-logo.png" width="44" height="44"/>
+  </svg>
+  <a href="#home" class="brand">SPy o.z.</a>
+
+  <!-- responsive-->
+  <input id="bmenub" type="checkbox" class="show">
+  <label for="bmenub" class="burger pseudo button" id="menu">menu</label>
+
+  <div class="menu">
+    
+    <a href="#team" class="pseudo button">Tím</a>
+    <a href="#contact" class="pseudo button">Kontakt</a>
+    <a href="https://www.pycon.sk/" class="pseudo button external">PyCon SK</a>
+    
+    
+    <a href="/en/index.html" title="Switch to english language"
+       hreflang="en"><img
+        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAC3ElEQVR4nI2TS2icZRiFn/f7/vyTzC2TyyQ6aawQW4upo5BqRWmpSiRYK0VE2ljvKIqLIoIgUhDULsQi4kJRrHcs3hZtqFErQRBSDaaLWlOTylRFScxMksn800zmv7wuAnVhFJ/lOWd3zoF/Iqto/+r9LbRuEQThnM+e+7bSdWKU0ugYILT05SlddwMH3xgBtwFUFYCFb9Tpv+vFn8an4+s7MjHSyQb+LFZ55sCD5F59jRm3E1TJ7drB5OA9jJx9nY62BIvVZYo1y7rmnR877718h5NtznHz458yfOQkOIY5z6d1pkil8BsoVKdnWKjWKExNUyi43P7ITXx06xre3j7QZI7f/6QK8NmB2wgm9nHN5rWU5qsEoqg1qBXUGopzHttu6WPp0E7eObyfn9dsZPHSXjW2JUPx6RcgUqw1jL55N/3rMtQiQCIiDanWA3ZsbGfk3rVU3v+Ec4O76NEZsg/twUlsupxkb56FoWNIFBCJxSQa8U5PUvc8QPFOTVD+4ms0qNNw41YIAupDx1gYPoq8RduZTYmWHt8xRCga+KCKTacwTTFAiJZqhBUPoghFIYiIR8qHYWXIMak4JpkEDTACmKaVfq1zvmVxXWwmjagSqSJhhA0VuxTi2FQSScZxjAHHgAiIEHoVNAhWNuI4OJlWNAyRUBEUx1hMaRlO/PH7GV2FX554Vsc78zremddf9z2/WkQ/+HL4iKHmMbv/IGOSw7/zUb47OsZkHRqkEUl1IckcrjRyct5nolA8P9zZp17iVP9uzA89g5Ite3RNT9F/5QNsfuxb5ueWcdPtSLobSV+Em2pjfrHOZde/y5a9w8yWa2Sf20vfV4dwYodfcQbKeT5/+HtizTG44iqyF8Roy26g2u4B0NKxnvYLE3D1tYyVDR27j7N9oJdtbskRRLrjjU73hksuxlqLARaXIwJrV44DqO/jBiGpmEU1wvd9fpw6K6HK6f947v/jL75XTMPxMeR3AAAAAElFTkSuQmCC"
+        alt="english language"></a>
+    
+  </div>
+</nav>
+
+<!-- Content -->
+<main>
+  
+<!-- Content -->
+<div class="section" id="home">
+  <div class="content">
+    <div class="content-text">
+      <h3>O Nás</h3>
+      <p>Poslaním občianskeho združenia SPy je podpora vývojárov a používateľov programovacieho jazyka Python. Podporujeme a šírime používanie programovacieho jazyka Python a iných open source technológii a open source myšlienok v našej spoločnosti.
+      </p>
+      <p>Našim cieľom je poskytovať pomoc a podporu úplným začiatočníkom a ľuďom, ktorí s programovaním začínajú. Ďalej si dávame za cieľ spolupracovať so školami a inými vzdelávacími inštitúciami a propagovať programovanie (nezávislé od programovacieho jazyka) u detí a mladých ľudí od čo najskoršieho možného veku.
+
+      </p>
+      <p>Podporujeme oblasť softvérového vývoja u sociálne slabších alebo inak znevýhodnených sociálnych skupín. Venujeme sa praktickému využitiu softvérového vývoja.
+
+      </p>
+      <p>Chceme spolupracovať na rôznych open source projektoch, vytvárať otvorený vzdelávací obsah použiteľný pri školskej výuke či samoštúdiu a zasadzovať sa o používanie otvorených technológii v spoločnosti a verejnom sektore.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="team">
+  <div class="content">
+    <div class="content-text">
+      <div class="flex one two-500 three-900 center demo">
+
+        <div>
+          <a href="https://sk.linkedin.com/in/richardkellner" target="_blank">
+            <img src="/static/img/avatar/ricco.jpg" alt="Richard Kellner avatar" class="avatar"/><br/>Richard Kellner
+          </a>
+          <br/>
+          <small>Predseda</small>
+        </div>
+
+        <div>
+          <a href="https://sk.linkedin.com/in/marekmansell" target="_blank">
+            <img src="/static/img/avatar/marekmansell.jpg" alt="Marek Mansell" class="avatar"/><br/>Marek Mansell
+          </a>
+          <br/>
+          <small>Pod-Predseda</small>
+        </div>
+
+        <div>
+          <svg width="200" height="200">
+            <image xlink:href="/static/img/logo/spy-logo.svg" src="/static/img/logo/spy-logo.png" width="200" height="200"/>
+          </svg>
+          <br/>
+          Daniel Kontšek<br/>
+          <small>Kontrolór</small>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/jangondol" target="_blank">
+            <img src="/static/img/avatar/jangondol.jpg" alt="Ján Gondoľ" class="avatar"/><br/>
+            Ján Gondoľ
+          </a>
+        </div>
+
+        <div>
+          <a href="https://sk.linkedin.com/in/mnalevanko" target="_blank">
+            <img src="/static/img/avatar/MNalevankoSQ.jpg" alt="Michal Nalevanko" class="avatar"/><br/>
+            Michal Nalevanko
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/tomas-pytel/" target="_blank">
+            <img src="/static/img/avatar/tomas_pytel.jpg" alt="Tomas Pytel" class="avatar"/><br/>
+            Tomáš Pytel
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/juraj-bezrucka-5651a1b/" target="_blank">
+            <img src="/static/img/avatar/mimmon.jpg" alt="Juraj M. Bezručka" class="avatar"/><br/>
+            Juraj M. Bezručka
+          </a>
+        </div>
+
+        <div>
+          <a href="https://www.linkedin.com/in/evameszarosova/" target="_blank">
+            <img src="/static/img/avatar/klimekova.jpg" alt="Eva Klimeková" class="avatar"/><br/>
+            Eva Klimeková
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <div class="content">
+    <div class="content-text">
+
+      <div class="flex one two-500 center demo">
+        <div>
+          <h2><i class="fa fa-home" aria-hidden="true"></i> Adresa</h2>
+          <p>
+            SPy o.z.<br/>
+            Sibírska 1599/21<br/>
+            Bratislava-Nové Mesto,<br/>
+            Slovenská Republika
+          </p>
+        </div>
+        <div>
+          <h2><i class="fa fa-gavel" aria-hidden="true"></i> Právna forma</h2>
+          <p>
+            IČO: 48412627<br/>
+            Registrované na MVSR: 26.8.2015<br/>
+            Číslo spisu: VVS/1-900/90-466 95<br/>
+            Stanovy: <a href="download/SPy_stanovy.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            PDF</a>
+          </p>
+        </div>
+      </div>
+      <div class="flex one two-900 center demo">
+        <div>
+          <h2><i class="fa fa-university" aria-hidden="true"></i> Bankové spojenie</h2>
+          <p>
+            Názov účtu: SPy<br/>
+            Názov banky: Fio banka, a. s., pobočka zahraničnej banky<br/>
+            Číslo účtu EUR (SK): 2300870269/8330<br/>
+            Číslo účtu EUR (CZ): 2300870269/2010<br/>
+            Číslo účtu EUR (IBAN): SK48 8330 0000 0023 0087 0269<br/>
+            SWIFT/BIC: FIOZSKBAXXX
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Content End -->
+
+  
+  <footer>
+    <div class="footer">
+      <p class="socka">
+        &nbsp;<a href="https://facebook.com/pyconsk" class="external"><i class="fa fa-facebook" aria-hidden="true"></i>
+        <span class="hide-900">Facebook</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://twitter.com/pyconsk" class="external"><i class="fa fa-twitter" aria-hidden="true"></i>
+        <span class="hide-900">Twitter</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://www.linkedin.com/company/spy-o--z-" class="external"><i class="fa fa-linkedin"
+                                                                                       aria-hidden="true"></i>
+        <span class="hide-900">LinkedIn</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://plus.google.com/u/0/b/114745643590416178453/114745643590416178453/posts"
+                 class="external"><i class="fa fa-google-plus" aria-hidden="true"></i>
+        <span class="hide-900">Google+</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://github.com/pyconsk" class="external"><i class="fa fa-github" aria-hidden="true"></i>
+        <span class="hide-900">GitHub</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="mailto:info%40pycon.sk" class="external"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+        <span class="hide-900">info@pycon.sk</span></a>&nbsp;
+        <span> | </span>
+        &nbsp;<a href="https://riot.python.sk" class="external"><i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="hide-900">riot.python.sk</span></a>
+      </p>
+      <p class="copyleft">
+        <i class="fa fa-creative-commons" aria-hidden="true"></i> 2015-2017 <a href="https://spy.pycon.sk">SPy o.z.</a>,
+        content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
+                                        class="external">CC-BY</a>,
+        except members avatars.<span class="hide-900"> Please consult with each SPy member, if you would like to use their avatar.</span>
+      </p>
+    </div>
+  </footer>
+  
+</main>
+
+</body>
+</html>
