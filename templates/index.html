@@ -25,6 +25,53 @@
   </div>
 </div>
 
+<div class="section" id="projects">
+  <div class="content">
+    <div class="content-text">
+
+      <div class="tabs four">
+        {% for year in events.keys() %}
+        <input id='tab-{{ year }}' type='radio' name='year-tabs' {% if loop.last %} checked{% endif %}/>
+        <label class="pseudo button toggle" for="tab-{{ year }}">{{ year }}</label>
+        {% endfor %}
+
+        <div class="row">
+          {% for year, data in events.items() %}
+          <div> <!-- {{ year }} -->
+            {% for event in data %}
+            <div class="tab">
+              <input id="tab-{{ loop.index }}-{{ year }}" type="radio" name="tabs-{{ year }}">
+              <label for="tab-{{ loop.index }}-{{ year }}">
+                {{ event.name }}{% if event.speakers %} - <span class="tab-speaker">{% for speaker in event.speakers %}{{ speaker.name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>{%
+                endif %} <span class="tab-date">{{ event.date }}{% if event.date_end %} – {{ event.date_end }}{% endif %}</span>
+              </label>
+              <div class="tab-content">
+                <p>{{ event.date }} {{ year }}{% if event.hour %} - {{ event.hour }}{% endif %}{% if event.date_end %} –
+                  {{ event.date_end }} {{ year }}{% endif %}</p>
+                {% if event.speakers %}
+                <p>{{ _('Speaker') }}: {% for speaker in event.speakers %}{% if speaker.link %}<a
+                    href="{{ speaker.link }}" target="_blank"
+                    title="{{ speaker.link_title }}">{% endif %}{{ speaker.name }}{% if speaker.link %}</a>{% endif %}{%
+                  if not loop.last %}, {% endif %}{% endfor %}
+                </p>{% endif %}
+                {% if event.location.name %}
+                <p>{{ _('Location') }}: <a href="{{ event.location.link }}" target="_blank"
+                                           title="{{ event.location.link_title }}">{{ event.location.name }}</a>, {{
+                  event.location.address }}
+                </p>{% endif %}
+                {% autoescape false %}{{ event.content }}{% endautoescape %}
+              </div>
+            </div>
+            {% endfor %}
+          </div> <!-- END {{ year }} -->
+          {% endfor %}
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
 <div class="section" id="team">
   <div class="content">
     <div class="content-text">
@@ -32,7 +79,8 @@
 
         <div>
           <a href="https://sk.linkedin.com/in/richardkellner" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/richard_kellner.jpg') }}" alt="Richard Kellner {{ _('avatar') }}" class="avatar"/><br/>Richard Kellner
+            <img src="{{ url_for('static', filename='img/avatar/richard_kellner.jpg') }}"
+                 alt="Richard Kellner {{ _('avatar') }}" class="avatar"/><br/>Richard Kellner
           </a>
           <br/>
           <small>{{ _('Chairman') }}</small>
@@ -40,7 +88,8 @@
 
         <div>
           <a href="https://sk.linkedin.com/in/marekmansell" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/marek_mansell.jpg') }}" alt="Marek Mansell {{ _('avatar') }}" class="avatar"/><br/>Marek Mansell
+            <img src="{{ url_for('static', filename='img/avatar/marek_mansell.jpg') }}"
+                 alt="Marek Mansell {{ _('avatar') }}" class="avatar"/><br/>Marek Mansell
           </a>
           <br/>
           <small>{{ _('Vice-Chairman') }}</small>
@@ -48,7 +97,8 @@
 
         <div>
           <a href="https://www.linkedin.com/in/danielkontsek/" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/daniel_kontsek.jpg') }}" alt="Daniel Kontšek {{ _('avatar') }}" class="avatar"/><br/>Daniel Kontšek
+            <img src="{{ url_for('static', filename='img/avatar/daniel_kontsek.jpg') }}"
+                 alt="Daniel Kontšek {{ _('avatar') }}" class="avatar"/><br/>Daniel Kontšek
           </a>
           <br/>
           <small>{{ _('Auditor') }}</small>
@@ -56,35 +106,41 @@
 
         <div>
           <a href="https://www.linkedin.com/in/jangondol" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/jan_gondol.jpg') }}" alt="Ján Gondoľ {{ _('avatar') }}" class="avatar"/><br/>
+            <img src="{{ url_for('static', filename='img/avatar/jan_gondol.jpg') }}"
+                 alt="Ján Gondoľ {{ _('avatar') }}"
+                 class="avatar"/><br/>
             Ján Gondoľ
           </a>
         </div>
 
         <div>
           <a href="https://sk.linkedin.com/in/mnalevanko" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/michal_nalevanko.jpg') }}" alt="Michal Nalevanko {{ _('avatar') }}" class="avatar"/><br/>
+            <img src="{{ url_for('static', filename='img/avatar/michal_nalevanko.jpg') }}"
+                 alt="Michal Nalevanko {{ _('avatar') }}" class="avatar"/><br/>
             Michal Nalevanko
           </a>
         </div>
 
         <div>
           <a href="https://www.linkedin.com/in/tomas-pytel/" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/tomas_pytel.jpg') }}" alt="Tomáš Pytel {{ _('avatar') }}" class="avatar"/><br/>
+            <img src="{{ url_for('static', filename='img/avatar/tomas_pytel.jpg') }}"
+                 alt="Tomáš Pytel {{ _('avatar') }}" class="avatar"/><br/>
             Tomáš Pytel
           </a>
         </div>
 
         <div>
           <a href="https://www.linkedin.com/in/juraj-bezrucka-5651a1b/" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/juraj_bezrucka.jpg') }}" alt="Juraj M. Bezručka {{ _('avatar') }}" class="avatar"/><br/>
+            <img src="{{ url_for('static', filename='img/avatar/juraj_bezrucka.jpg') }}"
+                 alt="Juraj M. Bezručka {{ _('avatar') }}" class="avatar"/><br/>
             Juraj M. Bezručka
           </a>
         </div>
 
         <div>
           <a href="https://www.linkedin.com/in/evameszarosova/" target="_blank">
-            <img src="{{ url_for('static', filename='img/avatar/eva_klimekova.jpg') }}" alt="Eva Klimeková {{ _('avatar') }}" class="avatar"/><br/>
+            <img src="{{ url_for('static', filename='img/avatar/eva_klimekova.jpg') }}"
+                 alt="Eva Klimeková {{ _('avatar') }}" class="avatar"/><br/>
             Eva Klimeková
           </a>
         </div>
@@ -114,8 +170,11 @@
             {{ _('Company ID') }}: 48412627<br/>
             {{ _('Registered at the Ministry of Interior') }}: 26.8.2015<br/>
             {{ _('Registry number') }}: VVS/1-900/90-466 95<br/>
-            {{ _('Bylaws') }}: <a href="download/SPy_stanovy.pdf"><i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            PDF</a>{% if lang_code == 'en' %}<small>(SK)</small>{% endif %}
+            {{ _('Bylaws') }}: <a href="download/SPy_stanovy.pdf"><i class="fa fa-file-pdf-o"
+                                                                     aria-hidden="true"></i>
+            PDF</a>{% if lang_code == 'en' %}
+            <small>(SK)</small>
+            {% endif %}
           </p>
         </div>
       </div>
