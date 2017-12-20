@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-20 11:45+0100\n"
+"POT-Creation-Date: 2017-12-20 19:53+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -91,9 +91,9 @@ msgstr ""
 
 #: templates/index.html:24
 msgid ""
-"Since 2015 we have done numerous <a href=\"#events\">events and "
-"projects</a>, if you would like to know\n"
-"        more scroll down to see what we are up to."
+"Since 2015 we have organized dozens of <a href=\"#events\">events and "
+"projects</a>. If you would like to\n"
+"        know more, scroll down to see what we are up to."
 msgstr ""
 
 #: templates/index.html:55
@@ -181,4 +181,11 @@ msgstr ""
 #: templates/index.html:197
 msgid "Find us online"
 msgstr ""
+
+#~ msgid ""
+#~ "Since 2015 we have done numerous "
+#~ "<a href=\"#events\">events and projects</a>, "
+#~ "if you would like to know\n"
+#~ "        more scroll down to see what we are up to."
+#~ msgstr ""
 
