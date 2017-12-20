@@ -38,29 +38,36 @@ nav {
   min-height: 16px;
 }
 ​
-.section {
+.section, .section#home, .section#team, .section#contact, .section#events, .section#donate {
+  height: auto;
+  min-height: 100%;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 .section#home {
-  background: white url('../img/backgrounds/volunteers.jpg');
-  background-attachment: fixed;
+  background-image: url('../img/backgrounds/volunteers.jpg');
 }
 
 .section#team {
-  background: white url('../img/backgrounds/django.jpg');
-  background-attachment: fixed;
+  background-image: url('../img/backgrounds/django.jpg');
 }
 
 .section#contact {
-  background: white url('../img/backgrounds/preparations.jpg');
-  background-attachment: fixed;
+  background-image: url('../img/backgrounds/preparations.jpg');
+}
+
+.section#events {
+  background-image: url('../img/backgrounds/speaker.jpg');
+}
+
+.section#donate {
+  background-image: url('../img/backgrounds/snake.jpg');
 }
 
 .content {
@@ -189,7 +196,6 @@ input[type=radio]:checked + label::after {
 
 @media (max-width: 60em) {
   .content {
-    min-height: 100vh;
     padding: 4em 3em;
   }
 }
@@ -205,31 +211,27 @@ input[type=radio]:checked + label::after {
   footer {
     position: static;
   }
-
-  .content {
-    position: static;
-    min-height: 100vh;
-  }
-
-  .section {
-    height: auto;
-  }
 }
 
 @media (max-width: 900px) {
   .section#home {
-    background: white url('../img/backgrounds/volunteers_medium.jpg');
-    background-attachment: fixed;
+    background-image: url('../img/backgrounds/volunteers_medium.jpg');
   }
 
   .section#team {
-    background: white url('../img/backgrounds/django_medium.jpg');
-    background-attachment: fixed;
+    background-image: url('../img/backgrounds/django_medium.jpg');
   }
 
   .section#contact {
-    background: white url('../img/backgrounds/preparations_medium.jpg');
-    background-attachment: fixed;
+    background-image: url('../img/backgrounds/preparations_medium.jpg');
+  }
+
+  .section#events {
+    background-image: url('../img/backgrounds/speaker_medium.jpg');
+  }
+
+  .section#donate {
+    background-image: url('../img/backgrounds/snake_medium.jpg');
   }
 
   .hide-900 {
@@ -239,21 +241,96 @@ input[type=radio]:checked + label::after {
 
 @media (max-width: 500px) {
   .section#home {
-    background: white url('../img/backgrounds/volunteers_small.jpg');
-    background-attachment: fixed;
+    background-image: url('../img/backgrounds/volunteers_small.jpg');
   }
 
   .section#team {
-    background: white url('../img/backgrounds/django_small.jpg');
-    background-attachment: fixed;
+    background-image: url('../img/backgrounds/django_small.jpg');
   }
 
   .section#contact {
-    background: white url('../img/backgrounds/preparations_small.jpg');
-    background-attachment: fixed;
+    background-image: url('../img/backgrounds/preparations_small.jpg');
+  }
+
+  .section#events {
+    background-image: url('../img/backgrounds/speaker_small.jpg');
+  }
+
+  .section#donate {
+    background-image: url('../img/backgrounds/snake_small.jpg');
   }
 
   .hide-500 {
     display: none;
+  }
+}
+
+/* Horizontal tablets */
+@media (orientation: portrait) {
+  .section#home {
+    background-image: url('../img/backgrounds/volunteers_horizontal.jpg');
+  }
+
+  .section#team {
+    background-image: url('../img/backgrounds/django_horizontal.jpg');
+  }
+
+  .section#contact {
+    background-image: url('../img/backgrounds/preparations_horizontal.jpg');
+  }
+
+  .section#events {
+    background-image: url('../img/backgrounds/speaker_horizontal.jpg');
+  }
+
+  .section#donate {
+    background-image: url('../img/backgrounds/snake_horizontal.jpg');
+  }
+}
+
+
+/* Horizontal phones */
+@media (max-width: 480px) and (orientation: portrait) {
+  .section#home {
+    background-image: url('../img/backgrounds/volunteers_horizontal_medium.jpg');
+  }
+
+  .section#team {
+    background-image: url('../img/backgrounds/django_horizontal_medium.jpg');
+  }
+
+  .section#contact {
+    background-image: url('../img/backgrounds/preparations_horizontal_medium.jpg');
+  }
+
+  .section#events {
+    background-image: url('../img/backgrounds/speaker_horizontal_medium.jpg');
+  }
+
+  .section#donate {
+    background-image: url('../img/backgrounds/snake_horizontal_medium.jpg');
+  }
+}
+
+/* Horizontal phones old */
+@media (max-width: 360px) and (orientation: portrait) {
+  .section#home {
+    background-image: url('../img/backgrounds/volunteers_horizontal_small.jpg');
+  }
+
+  .section#team {
+    background-image: url('../img/backgrounds/django_horizontal_small.jpg');
+  }
+
+  .section#contact {
+    background-image: url('../img/backgrounds/preparations_horizontal_small.jpg');
+  }
+
+  .section#events {
+    background-image: url('../img/backgrounds/speaker_horizontal_small.jpg');
+  }
+
+  .section#donate {
+    background-image: url('../img/backgrounds/snake_horizontal_small.jpg');
   }
 }

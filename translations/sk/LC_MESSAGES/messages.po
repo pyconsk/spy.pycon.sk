@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2017-12-17 21:04+0100\n"
+"POT-Creation-Date: 2017-12-20 11:45+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -27,15 +27,23 @@ msgstr ""
 "SPy je občianske združenie, založené na podporu vývojárov a používateľov "
 "programovacieho jazyka Python na Slovensku."
 
-#: templates/body.html:67
+#: templates/body.html:68 templates/index.html:7
+msgid "About Us"
+msgstr "O Nás"
+
+#: templates/body.html:69
+msgid "Events"
+msgstr "Udalosti"
+
+#: templates/body.html:70
 msgid "Team"
 msgstr "Tím"
 
-#: templates/body.html:68
+#: templates/body.html:71
 msgid "Contact"
 msgstr "Kontakt"
 
-#: templates/body.html:106
+#: templates/body.html:116
 msgid ""
 "content licensed under <a "
 "href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
@@ -43,15 +51,11 @@ msgid ""
 "        except members avatars."
 msgstr ""
 
-#: templates/body.html:108
+#: templates/body.html:118
 msgid ""
 "Please consult with each SPy member, if you would like to use their "
 "avatar."
 msgstr ""
-
-#: templates/index.html:7
-msgid "About Us"
-msgstr "O Nás"
 
 #: templates/index.html:8
 msgid ""
@@ -103,71 +107,97 @@ msgstr ""
 "zasadzovať sa o používanie otvorených technológii v spoločnosti a "
 "verejnom sektore."
 
-#: templates/index.html:38
+#: templates/index.html:24
+msgid ""
+"Since 2015 we have done numerous <a href=\"#events\">events and "
+"projects</a>, if you would like to know\n"
+"        more scroll down to see what we are up to."
+msgstr "Od roku 2015 sme spravili viacero <a href=\"#events\">stretnuti a "
+"projektov</a>, ak chcete vedieť viac pozrite sa nižšie na čom pracujeme."
+
+#: templates/index.html:55
+msgid "Speaker"
+msgstr "Rečník"
+
+#: templates/index.html:61
+msgid "Location"
+msgstr "Miesto"
+
+#: templates/index.html:86 templates/index.html:95 templates/index.html:104
+#: templates/index.html:113 templates/index.html:122 templates/index.html:130
+#: templates/index.html:138 templates/index.html:146
+msgid "avatar"
+msgstr "ikona"
+
+#: templates/index.html:89
 msgid "Chairman"
 msgstr "Predseda"
 
-#: templates/index.html:46
+#: templates/index.html:98
 msgid "Vice-Chairman"
 msgstr "Pod-Predseda"
 
-#: templates/index.html:55
+#: templates/index.html:107
 msgid "Auditor"
 msgstr "Kontrolór"
 
-#: templates/index.html:104
+#: templates/index.html:162
 msgid "Address"
 msgstr "Adresa"
 
-#: templates/index.html:109
+#: templates/index.html:167
 msgid "Slovak Republic"
 msgstr "Slovenská Republika"
 
-#: templates/index.html:113
+#: templates/index.html:171
 msgid "Legal details"
 msgstr "Právna forma"
 
-#: templates/index.html:115
+#: templates/index.html:173
 msgid "Company ID"
 msgstr "IČO"
 
-#: templates/index.html:116
+#: templates/index.html:174
 msgid "Registered at the Ministry of Interior"
 msgstr "Registrované na MVSR"
 
-#: templates/index.html:117
+#: templates/index.html:175
 msgid "Registry number"
 msgstr "Číslo spisu"
 
-#: templates/index.html:118
+#: templates/index.html:176
 msgid "Bylaws"
 msgstr "Stanovy"
 
-#: templates/index.html:126
+#: templates/index.html:186
 msgid "Bank details"
 msgstr "Bankové spojenie"
 
-#: templates/index.html:128
+#: templates/index.html:188
 msgid "Account name"
 msgstr "Názov účtu"
 
-#: templates/index.html:129
+#: templates/index.html:189
 msgid "Bank name"
 msgstr "Názov banky"
 
-#: templates/index.html:130
+#: templates/index.html:190
 msgid "Bank account EUR (SK)"
 msgstr "Číslo účtu EUR (SK)"
 
-#: templates/index.html:131
+#: templates/index.html:191
 msgid "Bank account EUR (CZ)"
 msgstr "Číslo účtu EUR (CZ)"
 
-#: templates/index.html:132
+#: templates/index.html:192
 msgid "Bank account EUR (IBAN)"
 msgstr "Číslo účtu EUR (IBAN)"
 
-#: templates/index.html:133
+#: templates/index.html:193
 msgid "SWIFT/BIC"
 msgstr ""
+
+#: templates/index.html:197
+msgid "Find us online"
+msgstr "Nájdite nás online"
 
