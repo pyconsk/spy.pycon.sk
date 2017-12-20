@@ -25,7 +25,7 @@
   </div>
 </div>
 
-<div class="section" id="projects">
+<div class="section" id="events">
   <div class="content">
     <div class="content-text">
 
@@ -43,7 +43,7 @@
               <input id="tab-{{ loop.index }}-{{ year }}" type="radio" name="tabs-{{ year }}">
               <label for="tab-{{ loop.index }}-{{ year }}">
                 {{ event.name }}{% if event.speakers %} - <span class="tab-speaker">{% for speaker in event.speakers %}{{ speaker.name }}{% if not loop.last %}, {% endif %}{% endfor %}</span>{%
-                endif %} <span class="tab-date">{{ event.date }}{% if event.date_end %} – {{ event.date_end }}{% endif %}</span>
+                endif %} <span class="tab-date hide-900">{{ event.date }}{% if event.date_end %} – {{ event.date_end }}{% endif %}</span>
               </label>
               <div class="tab-content">
                 <p>{{ event.date }} {{ year }}{% if event.hour %} - {{ event.hour }}{% endif %}{% if event.date_end %} –

@@ -38,7 +38,9 @@ nav {
   min-height: 16px;
 }
 ​
-.section, .section#home, .section#team, .section#contact, .section#projects, .section#donate {
+.section, .section#home, .section#team, .section#contact, .section#events, .section#donate {
+  height: auto;
+  min-height: 100%;
   -o-background-size: cover;
   -moz-background-size: cover;
   -webkit-background-size: cover;
@@ -60,7 +62,7 @@ nav {
   background-image: url('../img/backgrounds/preparations.jpg');
 }
 
-.section#projects {
+.section#events {
   background-image: url('../img/backgrounds/speaker.jpg');
 }
 
@@ -194,7 +196,7 @@ input[type=radio]:checked + label::after {
 
 @media (max-width: 60em) {
   .content {
-    min-height: 100vh;
+    min-height: 300vh;
     padding: 4em 3em;
   }
 }
@@ -209,15 +211,6 @@ input[type=radio]:checked + label::after {
 @media (max-width: 30em), (max-height: 35em) {
   footer {
     position: static;
-  }
-
-  .content {
-    position: static;
-    min-height: 100vh;
-  }
-
-  .section {
-    height: auto;
   }
 }
 
@@ -234,7 +227,7 @@ input[type=radio]:checked + label::after {
     background-image: url('../img/backgrounds/preparations_medium.jpg');
   }
 
-  .section#projects {
+  .section#events {
     background-image: url('../img/backgrounds/speaker_medium.jpg');
   }
 
@@ -260,7 +253,7 @@ input[type=radio]:checked + label::after {
     background-image: url('../img/backgrounds/preparations_small.jpg');
   }
 
-  .section#projects {
+  .section#events {
     background-image: url('../img/backgrounds/speaker_small.jpg');
   }
 
@@ -287,7 +280,7 @@ input[type=radio]:checked + label::after {
     background-image: url('../img/backgrounds/preparations_horizontal.jpg');
   }
 
-  .section#projects {
+  .section#events {
     background-image: url('../img/backgrounds/speaker_horizontal.jpg');
   }
 
@@ -311,7 +304,7 @@ input[type=radio]:checked + label::after {
     background-image: url('../img/backgrounds/preparations_horizontal_medium.jpg');
   }
 
-  .section#projects {
+  .section#events {
     background-image: url('../img/backgrounds/speaker_horizontal_medium.jpg');
   }
 
@@ -334,7 +327,7 @@ input[type=radio]:checked + label::after {
     background-image: url('../img/backgrounds/preparations_horizontal_small.jpg');
   }
 
-  .section#projects {
+  .section#events {
     background-image: url('../img/backgrounds/speaker_horizontal_small.jpg');
   }
 
