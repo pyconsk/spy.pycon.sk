@@ -143,6 +143,11 @@ def index():
             'link': 'https://www.linkedin.com/in/secult/',
             'link_title': gettext('Profil na LinkedIn') + ': Pavol Kincel',
         },
+        'michal_nalevanko': {
+            'name': 'Michal Nalevanko',
+            'link': 'https://www.linkedin.com/in/mnalevanko/',
+            'link_title': gettext('Profil na LinkedIn') + ': Michal Nalevanko',
+        },
     }
 
     template_variables['events'] = {
@@ -742,15 +747,16 @@ def index():
             },
             {
                 'name': '28. ' + gettext('Bratislavský Python Meetup'),
-                'date': '09. január',
-                'speakers': ({
-                                 'name': 'Michal Nalevanko',
-                                 'link': 'https://sk.linkedin.com/in/mnalevanko',
-                                 'link_title': gettext('Profil na LinkedIn') + ': Michal Nalevanko',
-                             },),
+                'date': '16. január',
+                'speakers': (speakers['michal_nalevanko'],),
                 'location': locations['progressbar'],
 
-                'content': '<p>TBD</p>'
+                'content': '<p><b>Zoznámte sa s pandami.</b></p>'
+                           '<p>Rok 2018 otvoríme s pandami, presnejšie s pandas - flexibilným nástrojom Pythonu na '
+                           'manipuláciu s dátami, ich analýzu a vizualizáciu.</p>'
+                           '<p>Michal Nalevanko bude mať pre vás pripravené nielen predstavenie tejto populárnej '
+                           'knižnice, ale aj praktické zadania, s ktorými si pandas sami vyskúšate. Prineste si preto '
+                           'aj vlastné notebooky, určite ich využijete.</p>'
                            '<p>Budeme mať aj súťaž o jednu licenciu PyCharm Professional.</p>'
                            '<p>Tešíme sa na Vás na stretnutí.</p>',
             },),
