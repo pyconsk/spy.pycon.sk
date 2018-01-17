@@ -287,6 +287,29 @@ def index():
                            '<p>Tešíme sa na Vás na stretnutí.</p>',
             },
             {
+                'name': 'Začíname s Djangom',
+                'date': '12. november',
+                'speakers': (speakers['richard_kellner'],),
+                'location': {
+                    'name': 'ŠD Mladosť',
+                    'address': 'Bratislava'
+                },
+                'content': '<p>Úvod do web programovania s Django frameworkom.</p>'
+                           '<p>Workshop je určená pre ľudí, ktorí by chceli začať programovať v Djangu. Ale tiež pre '
+                           'ľudí, ktorí už programujú v iných jazykoch a radi by sa pozreli ako sa pracuje s jedným z '
+                           'najrozšírenejších Pythonových frameworkov.</p>'
+                           '<p>Povieme si ako nainštalovať Django. Spravíme si jednoduchú aplikáciu, na ktorej si '
+                           'ukážeme dobré vlastnosti Djanga: </p>'
+                           '<p><ul>'
+                           '<li>inštalácia Djanga v Linuxe</li>'
+                           '<li>vytvorenie projektu a aplikácie</li>'
+                           '<li>vytvorenie databázového modelu</li>'
+                           '<li>vytvorenie admin rozhrania</li>'
+                           '<li>vytvorenie views a templateov</li>'
+                           '<li>vytvorenie formulára</li>'
+                           '</ul></p>'
+            },
+            {
                 'name': 'Hardware python pre učitelov',
                 'date': '10. november',
                 'speakers': (speakers['marek_mansell'],),
@@ -744,6 +767,23 @@ def index():
                 'content': '<p>TBD</p>'
                            '<p>Budeme mať aj súťaž o jednu licenciu PyCharm Professional.</p>'
                            '<p>Tešíme sa na Vás na stretnutí.</p>',
+            },
+            {
+                'name': 'Začíname s Djangom',
+                'date': '20. január',
+                'speakers': (speakers['richard_kellner'],),
+                'location': {
+                    'name': 'Mini Tech MBA',
+                    'link': 'http://http://minitechmba.org/',
+                    'link_title': 'Webstránka Mini Tech MBA.',
+                    'address': 'Čunovo',
+                },
+                'content': '<p>Úvod do web programovania s Django frameworkom.</p>'
+                           '<p>Workshop je určená pre ľudí, ktorí by chceli začať programovať v Djangu. Ale tiež pre '
+                           'ľudí, ktorí už programujú v iných jazykoch a radi by sa pozreli ako sa pracuje s jedným z '
+                           'najrozšírenejších Pythonových frameworkov.</p>'
+                           '<p>Povieme si ako nainštalovať Django. Spravíme si jednoduchú aplikáciu, na ktorej si '
+                           'ukážeme dobré vlastnosti Djanga.</p>'
             },
             {
                 'name': '28. ' + gettext('Bratislavský Python Meetup'),
