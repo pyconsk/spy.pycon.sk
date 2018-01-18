@@ -9,14 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-01-18 10:11+0100\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-01-18 22:01+0000\n"
+"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
+"Language-Team: Slovak <https://preklady.python.sk/projects/spy-oz-"
+"website/github/sk/>\n"
 "Language: sk\n"
-"Language-Team: sk <LL@li.org>\n"
-"Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.19-dev\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: templates/body.html:8 templates/body.html:19 templates/body.html:26
@@ -50,12 +52,17 @@ msgid ""
 "                                        class=\"external\">CC-BY</a>,\n"
 "        except members avatars."
 msgstr ""
+"obsah pod licenciou <a href=\"https://creativecommons.org/licenses/by/4.0/\" "
+"target=\"_blank\"                                        class=\"external\""
+">CC-BY 4.0</a>,\n"
+"s výnimkou avatarov."
 
 #: templates/body.html:118
 msgid ""
 "Please consult with each SPy member, if you would like to use their "
 "avatar."
 msgstr ""
+"Ak chcete použiť avatar niektorého člena SPy, vyžiadajte si vopred súhlas."
 
 #: templates/index.html:8
 msgid ""
@@ -119,7 +126,7 @@ msgstr ""
 
 #: templates/index.html:34
 msgid "Projects"
-msgstr ""
+msgstr "Projekty"
 
 #: templates/index.html:35
 #, python-format
@@ -251,4 +258,3 @@ msgstr ""
 #: templates/index.html:203
 msgid "Find us online"
 msgstr "Nájdite nás online"
-
