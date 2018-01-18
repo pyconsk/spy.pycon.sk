@@ -31,7 +31,13 @@
 <div class="section" id="events">
   <div class="content">
     <div class="content-text">
+      <h2>{{ _('Projects') }}</h2>
+      <p><strong>{{ _('<a href="%(url)s" target="_blank">BBC micro:bit</a> in slovak education', url='http://microbit.org/') }}</strong>: {{ _('Pilot project to improove Informatics lessons using BBC micro:bit in schools.') }}</p>
+      <p><strong>{{ _('<a href="%(url)s" target="_blank">Mu Editor</a> translations', url='https://codewith.mu/') }}</strong>: {{ _('<a href="%(url)s" target="_blank">Translation</a> of the editor into slovak language.', url='https://preklady.python.sk/projects/mu-editor/mu-editor-spy-github-fork/sk/') }}</p>
+      <p><strong>{{ _('<a href="%(url)s" target="_blank">Django Girls tutorial</a> translation', url='https://tutorial.djangogirls.org/en/index.html') }}</strong>: {{ _('<a href="%(url)s" target="_blank">Translation</a> of the tutorial into slovak language.', url='https://crowdin.com/project/django-girls-tutorial/sk#') }}</p>
+      <p><strong><a href="https://github.com/pyconsk/django-konfera" target="_blank">django-konfera</a></strong>: {{ _('Open Source django application for event management, was used to taught people basics of Django.') }}</p>
 
+      <h2>{{ _('Events') }}</h2>
       <div class="tabs four">
         {% for year in events.keys() %}
         <input id='tab-{{ year }}' type='radio' name='year-tabs' {% if loop.last %} checked{% endif %}/>

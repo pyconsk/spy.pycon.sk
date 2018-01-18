@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-17 22:33+0100\n"
+"POT-Creation-Date: 2018-01-18 10:11+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: sk\n"
@@ -31,7 +31,7 @@ msgstr ""
 msgid "About Us"
 msgstr "O Nás"
 
-#: templates/body.html:69
+#: templates/body.html:69 templates/index.html:40
 msgid "Events"
 msgstr "Udalosti"
 
@@ -117,89 +117,138 @@ msgstr ""
 "projektov</a>. Ak chcete vedieť viac, pozrite sa nižšie, na čom "
 "pracujeme."
 
-#: templates/index.html:55
+#: templates/index.html:34
+msgid "Projects"
+msgstr ""
+
+#: templates/index.html:35
+#, python-format
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">BBC micro:bit</a> in slovak "
+"education"
+msgstr ""
+
+#: templates/index.html:35
+msgid ""
+"Pilot project to improove Informatics lessons using BBC micro:bit in "
+"schools."
+msgstr ""
+
+#: templates/index.html:36
+#, python-format
+msgid "<a href=\"%(url)s\" target=\"_blank\">Mu Editor</a> translations"
+msgstr ""
+
+#: templates/index.html:36
+#, python-format
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">Translation</a> of the editor into "
+"slovak language."
+msgstr ""
+
+#: templates/index.html:37
+#, python-format
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">Django Girls tutorial</a> "
+"translation"
+msgstr ""
+
+#: templates/index.html:37
+#, python-format
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">Translation</a> of the tutorial "
+"into slovak language."
+msgstr ""
+
+#: templates/index.html:38
+msgid ""
+"Open Source django application for event management, was used to taught "
+"people basics of Django."
+msgstr ""
+
+#: templates/index.html:61
 msgid "Speaker"
 msgstr "Rečník"
 
-#: templates/index.html:61
+#: templates/index.html:67
 msgid "Location"
 msgstr "Miesto"
 
-#: templates/index.html:86 templates/index.html:95 templates/index.html:104
-#: templates/index.html:113 templates/index.html:122 templates/index.html:130
-#: templates/index.html:138 templates/index.html:146
+#: templates/index.html:92 templates/index.html:101 templates/index.html:110
+#: templates/index.html:119 templates/index.html:128 templates/index.html:136
+#: templates/index.html:144 templates/index.html:152
 msgid "avatar"
 msgstr "ikona"
 
-#: templates/index.html:89
+#: templates/index.html:95
 msgid "Chairman"
 msgstr "Predseda"
 
-#: templates/index.html:98
+#: templates/index.html:104
 msgid "Vice-Chairman"
 msgstr "Podpredseda"
 
-#: templates/index.html:107
+#: templates/index.html:113
 msgid "Auditor"
 msgstr "Kontrolór"
 
-#: templates/index.html:162
+#: templates/index.html:168
 msgid "Address"
 msgstr "Adresa"
 
-#: templates/index.html:167
+#: templates/index.html:173
 msgid "Slovak Republic"
 msgstr "Slovenská Republika"
 
-#: templates/index.html:171
+#: templates/index.html:177
 msgid "Legal details"
 msgstr "Právna forma"
 
-#: templates/index.html:173
+#: templates/index.html:179
 msgid "Company ID"
 msgstr "IČO"
 
-#: templates/index.html:174
+#: templates/index.html:180
 msgid "Registered at the Ministry of Interior"
 msgstr "Registrované na MVSR"
 
-#: templates/index.html:175
+#: templates/index.html:181
 msgid "Registry number"
 msgstr "Číslo spisu"
 
-#: templates/index.html:176
+#: templates/index.html:182
 msgid "Bylaws"
 msgstr "Stanovy"
 
-#: templates/index.html:186
+#: templates/index.html:192
 msgid "Bank details"
 msgstr "Bankové spojenie"
 
-#: templates/index.html:188
+#: templates/index.html:194
 msgid "Account name"
 msgstr "Názov účtu"
 
-#: templates/index.html:189
+#: templates/index.html:195
 msgid "Bank name"
 msgstr "Názov banky"
 
-#: templates/index.html:190
+#: templates/index.html:196
 msgid "Bank account EUR (SK)"
 msgstr "Číslo účtu EUR (SK)"
 
-#: templates/index.html:191
+#: templates/index.html:197
 msgid "Bank account EUR (CZ)"
 msgstr "Číslo účtu EUR (CZ)"
 
-#: templates/index.html:192
+#: templates/index.html:198
 msgid "Bank account EUR (IBAN)"
 msgstr "Číslo účtu EUR (IBAN)"
 
-#: templates/index.html:193
+#: templates/index.html:199
 msgid "SWIFT/BIC"
 msgstr ""
 
-#: templates/index.html:197
+#: templates/index.html:203
 msgid "Find us online"
 msgstr "Nájdite nás online"
 
