@@ -65,11 +65,12 @@
 
   <div class="menu">
     {% block nav %}
-    <a href="#home" class="pseudo button">{{ _('About Us') }}</a>
-    <a href="#events" class="pseudo button">{{ _('Events') }}</a>
-    <a href="#team" class="pseudo button">{{ _('Team') }}</a>
-    <a href="#contact" class="pseudo button">{{ _('Contact') }}</a>
-    <a href="https://www.pycon.sk/" class="pseudo button external">PyCon SK</a>
+    <a href="{{ url_for('index', lang_code=lang_code) }}#home" class="pseudo button">{{ _('About Us') }}</a>
+    <a href="{{ url_for('index', lang_code=lang_code) }}#events" class="pseudo button">{{ _('Events') }}</a>
+    <a href="{{ url_for('index', lang_code=lang_code) }}#team" class="pseudo button">{{ _('Team') }}</a>
+    <a href="{{ url_for('index', lang_code=lang_code) }}#contact" class="pseudo button">{{ _('Contact') }}</a>
+    <a href="{{ url_for('support', lang_code=lang_code) }}" class="pseudo button">{{ _('Support Us') }}</a>
+    <a href="https://www.pycon.sk/{{ lang_code }}/" class="pseudo button external">PyCon SK</a>
     {% endblock %}
     {% if lang_code == 'sk' %}
     <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" class="lang-en" title="Switch to english language"

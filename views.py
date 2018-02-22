@@ -805,6 +805,24 @@ def index():
     return render_template('index.html', **template_variables)
 
 
+@app.route('/<lang_code>/support.html')
+def support():
+    lang = get_locale()
+    LDJSON_EVENT = {
+        "@context": "http://schema.org",
+        "url": "https://spy.pycon.sk/" + lang + "/",
+        "creator": {
+            "@type": "Organization",
+            "name": "SPy o.z.",
+            "url": "https://spy.pycon.sk/",
+            "logo": "https://spy.pycon.sk/img/logo/spy-logo.png",
+        }
+    }
+    template_variables = _get_template_variables(ld_json=LDJSON_EVENT, li_index='active')
+
+    return render_template('support.html', **template_variables)
+
+
 def get_lastmod(route, sitemap_entry):
     """Used by sitemap() below"""
     if 'lastmod' in sitemap_entry:

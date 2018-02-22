@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-01-18 23:10+0100\n"
+"POT-Creation-Date: 2018-02-22 09:40+0100\n"
 "PO-Revision-Date: 2018-01-18 22:01+0000\n"
 "Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
@@ -44,7 +44,11 @@ msgstr "Tím"
 msgid "Contact"
 msgstr "Kontakt"
 
-#: templates/body.html:116
+#: templates/body.html:72
+msgid "Support Us"
+msgstr ""
+
+#: templates/body.html:117
 msgid ""
 "content licensed under <a "
 "href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
@@ -57,7 +61,7 @@ msgstr ""
 "\n"
 "s výnimkou avatarov."
 
-#: templates/body.html:118
+#: templates/body.html:119
 msgid ""
 "Please consult with each SPy member, if you would like to use their "
 "avatar."
