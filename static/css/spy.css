@@ -156,7 +156,7 @@ label {
   position: relative;
   display: block;
   padding: .3em 2.4em .3em .6em;
-  background: rgba(17,17,17,0.1);
+  background: rgba(17,17,17,0.2);
   color: #000;
   font-weight: bold;
   cursor: pointer;
