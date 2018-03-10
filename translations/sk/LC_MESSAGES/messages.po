@@ -9,15 +9,16 @@ msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-22 09:40+0100\n"
-"PO-Revision-Date: 2018-01-18 22:01+0000\n"
-"Last-Translator: Richard Kellner <richard.kellner@pycon.sk>\n"
-"Language: sk\n"
+"PO-Revision-Date: 2018-04-09 21:48+0000\n"
+"Last-Translator: Zue Fe <ex3me@centrum.sk>\n"
 "Language-Team: Slovak <https://preklady.python.sk/projects/spy-oz-"
 "website/github/sk/>\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Language: sk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 2.19.1\n"
 "Generated-By: Babel 2.5.1\n"
 
 #: templates/body.html:8 templates/body.html:19 templates/body.html:26
@@ -46,7 +47,7 @@ msgstr "Kontakt"
 
 #: templates/body.html:72
 msgid "Support Us"
-msgstr ""
+msgstr "Podporte Nás"
 
 #: templates/body.html:117
 msgid ""
@@ -145,6 +146,8 @@ msgid ""
 "Pilot project to improove Informatics lessons using BBC micro:bit\n"
 "        in schools."
 msgstr ""
+"Pilotný projekt na vylepšenie hodín informatiky pomocou BBC micro:bit\n"
+"na školách."
 
 #: templates/index.html:39
 #, python-format
@@ -258,7 +261,7 @@ msgstr "Číslo účtu EUR (IBAN)"
 
 #: templates/index.html:208
 msgid "SWIFT/BIC"
-msgstr ""
+msgstr "SWIFT/BIC"
 
 #: templates/index.html:212
 msgid "Find us online"
@@ -304,4 +307,3 @@ msgstr "Nájdite nás online"
 #~ "<a href=\"%(url)s\" target=\"_blank\">Translation</a> "
 #~ "of the tutorial into slovak language."
 #~ msgstr ""
-
