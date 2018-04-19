@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: spy-oz-website\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2018-02-22 09:40+0100\n"
+"PO-Revision-Date: 2018-04-19 17:16-0400\n"
+"Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language-Team: Czech\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.5.1\n"
+"Plural-Forms: nplurals=4; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 3;\n"
+"X-Generator: crowdin.com\n"
+"X-Crowdin-Project: spy-oz-website\n"
+"X-Crowdin-Language: cs\n"
+"X-Crowdin-File: /master/translations/messages.pot\n"
+"Language: cs_CZ\n"
+
+#: templates/body.html:8 templates/body.html:19 templates/body.html:26
+msgid "SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia."
+msgstr ""
+
+#: templates/body.html:68 templates/index.html:7
+msgid "About Us"
+msgstr ""
+
+#: templates/body.html:69 templates/index.html:48
+msgid "Events"
+msgstr ""
+
+#: templates/body.html:70
+msgid "Team"
+msgstr ""
+
+#: templates/body.html:71
+msgid "Contact"
+msgstr ""
+
+#: templates/body.html:72
+msgid "Support Us"
+msgstr ""
+
+#: templates/body.html:117
+msgid "content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
+"                                        class=\"external\">CC-BY</a>,\n"
+"        except members avatars."
+msgstr ""
+
+#: templates/body.html:119
+msgid "Please consult with each SPy member, if you would like to use their avatar."
+msgstr ""
+
+#: templates/index.html:8
+msgid "The mission of the SPy civic association (SPy is the abbreviation of \"Slovak Python\", or sometimes we say\n"
+"        \"Slovak Python User Group\") is to support developers and users of the Python programming language. We support\n"
+"        and we spread the programming language Python and other open source technologies and open source ideas in our\n"
+"        society."
+msgstr ""
+
+#: templates/index.html:13
+msgid "Our goal is to provide help and support for beginners and people who are new to programming. Another goal\n"
+"        is to work with schools and other educational institutions, and promote programming (independent of the\n"
+"        programming language) in children and young people from the earliest age."
+msgstr ""
+
+#: templates/index.html:18
+msgid "We support the area of software development in socially vulnerable or otherwise disadvantaged social\n"
+"        groups. We are dedicated to practical use of software development."
+msgstr ""
+
+#: templates/index.html:22
+msgid "We want to work on various open source projects, to create open educational content for use in schools as\n"
+"        well as self-study and advocate for the use of open technologies in society and the public sector."
+msgstr ""
+
+#: templates/index.html:25
+msgid "Since 2015 we have organized dozens of <a href=\"#events\">events and projects</a>. If you would like to\n"
+"        know more, scroll down to see what we are up to."
+msgstr ""
+
+#: templates/index.html:35
+msgid "Projects"
+msgstr ""
+
+#: templates/index.html:36
+#, python-format
+msgid "<a href=\"%(url)s\" target=\"_blank\">BBC micro:bit</a> in slovak education"
+msgstr ""
+
+#: templates/index.html:37
+msgid "Pilot project to improove Informatics lessons using BBC micro:bit\n"
+"        in schools."
+msgstr ""
+
+#: templates/index.html:39
+#, python-format
+msgid "<a href=\"%(url)s\" target=\"_blank\">Mu Editor</a> translations"
+msgstr ""
+
+#: templates/index.html:40
+#, python-format
+msgid "<a href=\"%(url)s\" target=\"_blank\">Translation</a> of the editor into slovak language."
+msgstr ""
+
+#: templates/index.html:42
+#, python-format
+msgid "<a href=\"%(url)s\" target=\"_blank\">Django Girls tutorial</a> translation"
+msgstr ""
+
+#: templates/index.html:43
+#, python-format
+msgid "<a href=\"%(url)s\" target=\"_blank\">Translation</a>\n"
+"        of the tutorial into slovak language."
+msgstr ""
+
+#: templates/index.html:46
+msgid "Open Source django application for event management, was used to taught people basics of Django."
+msgstr ""
+
+#: templates/index.html:69
+msgid "Speaker"
+msgstr ""
+
+#: templates/index.html:75
+msgid "Location"
+msgstr ""
+
+#: templates/index.html:100 templates/index.html:109 templates/index.html:118
+#: templates/index.html:127 templates/index.html:136 templates/index.html:144
+#: templates/index.html:152 templates/index.html:160
+msgid "avatar"
+msgstr ""
+
+#: templates/index.html:103
+msgid "Chairman"
+msgstr ""
+
+#: templates/index.html:112
+msgid "Vice-Chairman"
+msgstr ""
+
+#: templates/index.html:121
+msgid "Auditor"
+msgstr ""
+
+#: templates/index.html:176
+msgid "Address"
+msgstr ""
+
+#: templates/index.html:181
+msgid "Slovak Republic"
+msgstr ""
+
+#: templates/index.html:185
+msgid "Legal details"
+msgstr ""
+
+#: templates/index.html:187
+msgid "Company ID"
+msgstr ""
+
+#: templates/index.html:188
+msgid "Registered at the Ministry of Interior"
+msgstr ""
+
+#: templates/index.html:189
+msgid "Registry number"
+msgstr ""
+
+#: templates/index.html:190
+msgid "Bylaws"
+msgstr ""
+
+#: templates/index.html:201
+msgid "Bank details"
+msgstr ""
+
+#: templates/index.html:203
+msgid "Account name"
+msgstr ""
+
+#: templates/index.html:204
+msgid "Bank name"
+msgstr ""
+
+#: templates/index.html:205
+msgid "Bank account EUR (SK)"
+msgstr ""
+
+#: templates/index.html:206
+msgid "Bank account EUR (CZ)"
+msgstr ""
+
+#: templates/index.html:207
+msgid "Bank account EUR (IBAN)"
+msgstr ""
+
+#: templates/index.html:208
+msgid "SWIFT/BIC"
+msgstr ""
+
+#: templates/index.html:212
+msgid "Find us online"
+msgstr ""
+
