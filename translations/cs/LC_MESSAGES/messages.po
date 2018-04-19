@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: spy-oz-website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-19 21:23+0200\n"
-"PO-Revision-Date: 2018-04-19 18:20-0400\n"
+"PO-Revision-Date: 2018-04-19 18:30-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language: cs\n"
 "Language-Team: Czech\n"
@@ -58,7 +58,7 @@ msgstr ""
 
 #: views.py:560
 msgid "Prague, Czech Republic"
-msgstr ""
+msgstr "Praha, Česká republika"
 
 #: templates/body.html:8 templates/body.html:19 templates/body.html:26
 msgid "SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia."
@@ -66,23 +66,23 @@ msgstr ""
 
 #: templates/body.html:68 templates/index.html:7
 msgid "About Us"
-msgstr ""
+msgstr "O nás"
 
 #: templates/body.html:69 templates/index.html:48
 msgid "Events"
-msgstr ""
+msgstr "Události"
 
 #: templates/body.html:70
 msgid "Team"
-msgstr ""
+msgstr "Tým"
 
 #: templates/body.html:71
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: templates/body.html:72
 msgid "Support Us"
-msgstr ""
+msgstr "Podpořte nás"
 
 #: templates/body.html:117
 msgid "content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
@@ -193,7 +193,7 @@ msgstr ""
 
 #: templates/index.html:181
 msgid "Slovak Republic"
-msgstr ""
+msgstr "Slovenská Republika"
 
 #: templates/index.html:185
 msgid "Legal details"
@@ -201,7 +201,7 @@ msgstr ""
 
 #: templates/index.html:187
 msgid "Company ID"
-msgstr ""
+msgstr "IČO"
 
 #: templates/index.html:188
 msgid "Registered at the Ministry of Interior"
@@ -241,7 +241,7 @@ msgstr ""
 
 #: templates/index.html:208
 msgid "SWIFT/BIC"
-msgstr ""
+msgstr "SWIFT/BIC"
 
 #: templates/index.html:212
 msgid "Find us online"
