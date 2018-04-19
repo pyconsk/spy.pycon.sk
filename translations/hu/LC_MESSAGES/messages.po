@@ -1,24 +1,66 @@
+
 msgid ""
 msgstr ""
-"Project-Id-Version: spy-oz-website\n"
+"Project-Id-Version:  spy-oz-website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-22 09:40+0100\n"
+"POT-Creation-Date: 2018-04-19 23:35+0200\n"
 "PO-Revision-Date: 2018-04-19 17:16-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language: hu_HU\n"
 "Language-Team: Hungarian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: crowdin.com\n"
-"X-Crowdin-Project: spy-oz-website\n"
-"X-Crowdin-Language: hu\n"
-"X-Crowdin-File: /master/translations/messages.pot\n"
-"Language: hu_HU\n"
+
+#: views.py:65
+msgid "PyCon SK"
+msgstr ""
+
+#: views.py:98
+msgid "ProgressBar Calendar"
+msgstr ""
+
+#: views.py:104
+msgid "Webstránka FIIT STU"
+msgstr ""
+
+#: views.py:110
+msgid "Webstránka FabLab"
+msgstr ""
+
+#: views.py:116
+msgid "Webstránka Gymnázium Jura Hronca"
+msgstr ""
+
+#: views.py:124 views.py:129 views.py:134 views.py:139 views.py:144
+#: views.py:149 views.py:162 views.py:192 views.py:395 views.py:479
+#: views.py:763
+msgid "Profil na LinkedIn"
+msgstr ""
+
+#: views.py:156 views.py:174 views.py:186 views.py:203 views.py:229
+#: views.py:247 views.py:267 views.py:327 views.py:341 views.py:360
+#: views.py:378 views.py:389 views.py:405 views.py:421 views.py:452
+#: views.py:473 views.py:513 views.py:541 views.py:585 views.py:597
+#: views.py:606 views.py:622 views.py:653 views.py:662 views.py:684
+#: views.py:710 views.py:725 views.py:758 views.py:789
+msgid "Bratislavský Python Meetup"
+msgstr ""
+
+#: views.py:458
+msgid "Profil na GitHube"
+msgstr ""
+
+#: views.py:560
+msgid "Prague, Czech Republic"
+msgstr ""
 
 #: templates/body.html:8 templates/body.html:19 templates/body.html:26
-msgid "SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia."
+msgid ""
+"SPy o.z. is civic association founded to support developers and users of "
+"the Python programming language in Slovakia."
 msgstr ""
 
 #: templates/body.html:68 templates/index.html:7
@@ -42,40 +84,59 @@ msgid "Support Us"
 msgstr ""
 
 #: templates/body.html:117
-msgid "content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
+msgid ""
+"content licensed under <a "
+"href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
 "                                        class=\"external\">CC-BY</a>,\n"
 "        except members avatars."
 msgstr ""
 
 #: templates/body.html:119
-msgid "Please consult with each SPy member, if you would like to use their avatar."
+msgid ""
+"Please consult with each SPy member, if you would like to use their "
+"avatar."
 msgstr ""
 
 #: templates/index.html:8
-msgid "The mission of the SPy civic association (SPy is the abbreviation of \"Slovak Python\", or sometimes we say\n"
-"        \"Slovak Python User Group\") is to support developers and users of the Python programming language. We support\n"
-"        and we spread the programming language Python and other open source technologies and open source ideas in our\n"
+msgid ""
+"The mission of the SPy civic association (SPy is the abbreviation of "
+"\"Slovak Python\", or sometimes we say\n"
+"        \"Slovak Python User Group\") is to support developers and users "
+"of the Python programming language. We support\n"
+"        and we spread the programming language Python and other open "
+"source technologies and open source ideas in our\n"
 "        society."
 msgstr ""
 
 #: templates/index.html:13
-msgid "Our goal is to provide help and support for beginners and people who are new to programming. Another goal\n"
-"        is to work with schools and other educational institutions, and promote programming (independent of the\n"
-"        programming language) in children and young people from the earliest age."
+msgid ""
+"Our goal is to provide help and support for beginners and people who are "
+"new to programming. Another goal\n"
+"        is to work with schools and other educational institutions, and "
+"promote programming (independent of the\n"
+"        programming language) in children and young people from the "
+"earliest age."
 msgstr ""
 
 #: templates/index.html:18
-msgid "We support the area of software development in socially vulnerable or otherwise disadvantaged social\n"
+msgid ""
+"We support the area of software development in socially vulnerable or "
+"otherwise disadvantaged social\n"
 "        groups. We are dedicated to practical use of software development."
 msgstr ""
 
 #: templates/index.html:22
-msgid "We want to work on various open source projects, to create open educational content for use in schools as\n"
-"        well as self-study and advocate for the use of open technologies in society and the public sector."
+msgid ""
+"We want to work on various open source projects, to create open "
+"educational content for use in schools as\n"
+"        well as self-study and advocate for the use of open technologies "
+"in society and the public sector."
 msgstr ""
 
 #: templates/index.html:25
-msgid "Since 2015 we have organized dozens of <a href=\"#events\">events and projects</a>. If you would like to\n"
+msgid ""
+"Since 2015 we have organized dozens of <a href=\"#events\">events and "
+"projects</a>. If you would like to\n"
 "        know more, scroll down to see what we are up to."
 msgstr ""
 
@@ -85,11 +146,14 @@ msgstr ""
 
 #: templates/index.html:36
 #, python-format
-msgid "<a href=\"%(url)s\" target=\"_blank\">BBC micro:bit</a> in slovak education"
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">BBC micro:bit</a> in slovak "
+"education"
 msgstr ""
 
 #: templates/index.html:37
-msgid "Pilot project to improove Informatics lessons using BBC micro:bit\n"
+msgid ""
+"Pilot project to improove Informatics lessons using BBC micro:bit\n"
 "        in schools."
 msgstr ""
 
@@ -100,22 +164,29 @@ msgstr ""
 
 #: templates/index.html:40
 #, python-format
-msgid "<a href=\"%(url)s\" target=\"_blank\">Translation</a> of the editor into slovak language."
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">Translation</a> of the editor into "
+"slovak language."
 msgstr ""
 
 #: templates/index.html:42
 #, python-format
-msgid "<a href=\"%(url)s\" target=\"_blank\">Django Girls tutorial</a> translation"
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">Django Girls tutorial</a> "
+"translation"
 msgstr ""
 
 #: templates/index.html:43
 #, python-format
-msgid "<a href=\"%(url)s\" target=\"_blank\">Translation</a>\n"
+msgid ""
+"<a href=\"%(url)s\" target=\"_blank\">Translation</a>\n"
 "        of the tutorial into slovak language."
 msgstr ""
 
 #: templates/index.html:46
-msgid "Open Source django application for event management, was used to taught people basics of Django."
+msgid ""
+"Open Source django application for event management, was used to taught "
+"people basics of Django."
 msgstr ""
 
 #: templates/index.html:69
