@@ -2,20 +2,63 @@ msgid ""
 msgstr ""
 "Project-Id-Version: spy-oz-website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-02-22 09:40+0100\n"
-"PO-Revision-Date: 2018-04-19 17:16-0400\n"
+"POT-Creation-Date: 2018-04-19 21:23+0200\n"
+"PO-Revision-Date: 2018-04-19 17:30-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
+"Language: hu\n"
 "Language-Team: Hungarian\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.5.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: crowdin.com\n"
 "X-Crowdin-Project: spy-oz-website\n"
 "X-Crowdin-Language: hu\n"
-"X-Crowdin-File: /master/translations/messages.pot\n"
-"Language: hu_HU\n"
+"X-Crowdin-File: /master/translations/en/LC_MESSAGES/messages.po\n"
+
+#: views.py:65
+msgid "PyCon SK"
+msgstr ""
+
+#: views.py:98
+msgid "ProgressBar Calendar"
+msgstr ""
+
+#: views.py:104
+msgid "Webstránka FIIT STU"
+msgstr ""
+
+#: views.py:110
+msgid "Webstránka FabLab"
+msgstr ""
+
+#: views.py:116
+msgid "Webstránka Gymnázium Jura Hronca"
+msgstr ""
+
+#: views.py:124 views.py:129 views.py:134 views.py:139 views.py:144
+#: views.py:149 views.py:162 views.py:192 views.py:395 views.py:479
+#: views.py:763
+msgid "Profil na LinkedIn"
+msgstr ""
+
+#: views.py:156 views.py:174 views.py:186 views.py:203 views.py:229
+#: views.py:247 views.py:267 views.py:327 views.py:341 views.py:360
+#: views.py:378 views.py:389 views.py:405 views.py:421 views.py:452
+#: views.py:473 views.py:513 views.py:541 views.py:585 views.py:597
+#: views.py:606 views.py:622 views.py:653 views.py:662 views.py:684
+#: views.py:710 views.py:725 views.py:758 views.py:789
+msgid "Bratislavský Python Meetup"
+msgstr ""
+
+#: views.py:458
+msgid "Profil na GitHube"
+msgstr ""
+
+#: views.py:560
+msgid "Prague, Czech Republic"
+msgstr ""
 
 #: templates/body.html:8 templates/body.html:19 templates/body.html:26
 msgid "SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia."
