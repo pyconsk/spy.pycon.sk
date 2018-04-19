@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: spy-oz-website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-02-22 09:40+0100\n"
-"PO-Revision-Date: 2018-04-19 07:51-0400\n"
+"PO-Revision-Date: 2018-04-19 08:02-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language-Team: Czech\n"
 "Language: cs\n"
@@ -19,27 +19,27 @@ msgstr ""
 
 #: templates/body.html:8 templates/body.html:19 templates/body.html:26
 msgid "SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia."
-msgstr ""
+msgstr "SPy o.z. je občanské sdružení, které založili pro podporu vývojářů a uživatelů programovacího jazyka Python na Slovensku."
 
 #: templates/body.html:68 templates/index.html:7
 msgid "About Us"
-msgstr ""
+msgstr "O nás"
 
 #: templates/body.html:69 templates/index.html:48
 msgid "Events"
-msgstr ""
+msgstr "Události"
 
 #: templates/body.html:70
 msgid "Team"
-msgstr ""
+msgstr "Tým"
 
 #: templates/body.html:71
 msgid "Contact"
-msgstr ""
+msgstr "Kontakt"
 
 #: templates/body.html:72
 msgid "Support Us"
-msgstr ""
+msgstr "Podpořte nás"
 
 #: templates/body.html:117
 msgid "content licensed under <a href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
