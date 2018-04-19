@@ -22,7 +22,7 @@ Project structure
 **2 branches**:
 
 - ``master`` - the `Flask <http://flask.pocoo.org/>`_ app, templates, static files, translations (make your changes here).
-- ``l10n_master`` - the `Crowdin translation <https://crowdin.com/project/spy-oz-website`_ branch (do not make any changes here).
+- ``l10n_master`` - the `Crowdin translation <https://crowdin.com/project/spy-oz-website>`_ branch (do not make any changes here).
 
 
 Installation
