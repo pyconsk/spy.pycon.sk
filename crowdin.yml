@@ -1,3 +1,10 @@
 files:
-  - source: translations/messages.pot
-    translation: LC_MESSAGES/%file_name%.po
+  - source: /translations/messages.pot
+    translation: /translations/%two_letters_code%/LC_MESSAGES/%file_name%.po
+    languages_mapping:
+      locale:
+        de: de
+        sk: sk
+        cz: cz
+        hu: hu
+        ru-UA: ru
