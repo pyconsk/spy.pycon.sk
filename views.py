@@ -13,7 +13,7 @@ babel = Babel(app)
 SRC_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__)))
 LOGO_PYCON = 'logo/pycon.svg'
 
-LANGS = ('en', 'sk')
+LANGS = ('en', 'sk', 'cs', 'de', 'hu', 'ru', 'pl')
 TIME_FORMAT = '%Y-%m-%dT%H:%M:%S+00:00'
 NOW = datetime.utcnow().strftime(TIME_FORMAT)
 
@@ -56,7 +56,7 @@ def before():
 def get_locale():
     # try to guess the language from the user accept
     # header the browser transmits. The best match wins.
-    # return request.accept_languages.best_match(['de', 'sk', 'en'])
+    # return request.accept_languages.best_match(['en', 'sk', 'cs', 'de', 'hu', 'ru', 'pl'])
     return g.get('current_lang', app.config['BABEL_DEFAULT_LOCALE'])
 
 
