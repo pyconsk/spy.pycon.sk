@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: spy-oz-website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-19 21:23+0200\n"
-"PO-Revision-Date: 2018-04-19 17:40-0400\n"
+"PO-Revision-Date: 2018-04-19 18:20-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language: cs\n"
 "Language-Team: Czech\n"
@@ -19,11 +19,11 @@ msgstr ""
 
 #: views.py:65
 msgid "PyCon SK"
-msgstr ""
+msgstr "PyCon SK"
 
 #: views.py:98
 msgid "ProgressBar Calendar"
-msgstr ""
+msgstr "ProgressBar kalendář"
 
 #: views.py:104
 msgid "Webstránka FIIT STU"
