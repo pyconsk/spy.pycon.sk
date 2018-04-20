@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: spy-oz-website\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
 "POT-Creation-Date: 2018-04-19 21:23+0200\n"
-"PO-Revision-Date: 2018-04-19 18:20-0400\n"
+"PO-Revision-Date: 2018-04-20 04:36-0400\n"
 "Last-Translator: RicCo386 <richard.kellner@pycon.sk>\n"
 "Language: sk\n"
 "Language-Team: Slovak\n"
@@ -130,7 +130,7 @@ msgstr "Projekty"
 #: templates/index.html:36
 #, python-format
 msgid "<a href=\"%(url)s\" target=\"_blank\">BBC micro:bit</a> in slovak education"
-msgstr ""
+msgstr "<a href=\"%(url)s\" target=\"_blank\">BBC micro:bit</a> na slovenských školách"
 
 #: templates/index.html:37
 msgid "Pilot project to improove Informatics lessons using BBC micro:bit\n"
@@ -141,27 +141,28 @@ msgstr "Pilotný projekt na vylepšenie hodín informatiky pomocou BBC micro:bit
 #: templates/index.html:39
 #, python-format
 msgid "<a href=\"%(url)s\" target=\"_blank\">Mu Editor</a> translations"
-msgstr ""
+msgstr "Preklady <a href=\"%(url)s\" target=\"_blank\">Mu editoru</a>"
 
 #: templates/index.html:40
 #, python-format
 msgid "<a href=\"%(url)s\" target=\"_blank\">Translation</a> of the editor into slovak language."
-msgstr ""
+msgstr "<a href=\"%(url)s\" target=\"_blank\">Preklady</a> editoru do slovenčiny."
 
 #: templates/index.html:42
 #, python-format
 msgid "<a href=\"%(url)s\" target=\"_blank\">Django Girls tutorial</a> translation"
-msgstr ""
+msgstr "Preklad <a href=\"%(url)s\" target=\"_blank\">návodov pre kurz Django Girls</a>"
 
 #: templates/index.html:43
 #, python-format
 msgid "<a href=\"%(url)s\" target=\"_blank\">Translation</a>\n"
 "        of the tutorial into slovak language."
-msgstr ""
+msgstr "<a href=\"%(url)s\" target=\"_blank\">Preklad</a>\n"
+"         tutorialu do slovenčiny."
 
 #: templates/index.html:46
 msgid "Open Source django application for event management, was used to taught people basics of Django."
-msgstr ""
+msgstr "Otvorená django aplikácia na správu eventov a konferencií, používaná aj na výuku základov Djanga pre prispievateľov."
 
 #: templates/index.html:69
 msgid "Speaker"
