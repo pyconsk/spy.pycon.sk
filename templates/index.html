@@ -54,7 +54,7 @@
 
         <div class="row">
           {% for year, data in events.items() %}
-          <div> <!-- {{ year }} -->
+          <div class="box-{{ year }}"> <!-- {{ year }} -->
             {% for event in data %}
             <div class="tab">
               <input id="tab-{{ loop.index }}-{{ year }}" type="radio" name="tabs-{{ year }}">
@@ -77,13 +77,13 @@
                   event.location.address }}
                 </p>{% endif %}
                 {% autoescape false %}{{ event.content }}{% endautoescape %}
-              </div>
-            </div>
+              </div> <!-- END tab-content -->
+            </div> <!-- END tab -->
             {% endfor %}
           </div> <!-- END {{ year }} -->
           {% endfor %}
-        </div>
-      </div>
+        </div> <!-- END row -->
+      </div> <!-- END tabs -->
 
     </div>
   </div>
