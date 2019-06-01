@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="{% if lang_code %}{{ lang_code }}{% else %}sk{% endif %}">
+<html lang="sk">
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description"
-        content="{{ _('SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.') }}">
+        content="SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.">
   <meta name="author" content="Richard Kellner, SPy o.z.">
-  <title>{{ title }}</title>
+  <title>PyCon SK</title>
 
   <!-- You Promised Me Mars Colonies. Instead, I Got Facebook (Buzz Aldrin) -->
   <!-- Twitter -->
@@ -16,47 +16,43 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="SPy o.z.">
   <meta name="twitter:description"
-        content="{{ _('SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.' ) }}">
+        content="SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.">
   <meta name="twitter:image" content="https://spy.python.sk/static/img/logo/spy-logo.png">
   <meta name="twitter:url" content="https://spy.python.sk">
   <!-- Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="SPy o.z.">
   <meta property="og:description"
-        content="{{ _('SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.') }}">
+        content="SPy o.z. is civic association founded to support developers and users of the Python programming language in Slovakia.">
   <meta property="og:site_name" content="spy.python.sk">
   <meta property="og:image" content="https://spy.python.sk/static/img/logo/spy-logo.png">
   <meta property="og:url" content="https://spy.python.sk">
 
   <!-- CSS -->
-  <link href="{{ url_for('static', filename='css/picnic.min.css') }}" type="text/css" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/spy.min.css') }}?v=5" type="text/css" rel="stylesheet">
-  <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" type="text/css" rel="stylesheet">
+  <link href="/static/css/picnic.min.css" type="text/css" rel="stylesheet">
+  <link href="/static/css/spy.min.css?v=5" type="text/css" rel="stylesheet">
+  <link href="/static/css/font-awesome.min.css" type="text/css" rel="stylesheet">
 
   <!-- JavaScript -->
-  <script src="{{ url_for('static', filename='js/analytics.min.js') }}"></script>
-  {% block header %}{% endblock %}
+  <script src="/static/js/analytics.min.js"></script>
+  
   <!-- Favicon -->
-  <link rel="apple-touch-icon" href="{{ url_for('static', filename='img/logo/spy-logo.png') }}">
-  <link rel="icon" type="image/png" href="{{ url_for('static', filename='img/logo/spy-logo.png') }}">
-  {#
-  <link rel="icon" href="{{ url_for('static', filename='img/logo/favicon.ico') }}" sizes="16x16">
-  #}
-  {% if lang_code == 'sk' %}
-  <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/en', 1) }}" hreflang="en">
-  {% else %}
-  <link rel="alternate" href="https://2018.pycon.sk{{ request.path|replace('/'+lang_code, '/sk', 1) }}" hreflang="sk">
-  {% endif %}
-  <link rel="canonical" href="https://2018.pycon.sk{{ request.path }}"/>
-  {% if redirect_url %}<meta http-equiv="refresh" content="0; URL='{{ redirect_url }}'" />{% endif %}
+  <link rel="apple-touch-icon" href="/static/img/logo/spy-logo.png">
+  <link rel="icon" type="image/png" href="/static/img/logo/spy-logo.png">
+  
+  
+  <link rel="alternate" href="https://2018.pycon.sk/" hreflang="en">
+  
+  <link rel="canonical" href="https://2018.pycon.sk/"/>
+  <meta http-equiv="refresh" content="0; URL='/sk/'" />
 </head>
 <body>
 
 <!-- Header: fixed navbar -->
 <nav class="transparent">
   <svg width="44" height="44" class="logo">
-    <image xlink:href="{{ url_for('static', filename='img/logo/spy-logo.svg') }}"
-           src="{{ url_for('static', filename='img/logo/spy-logo.png') }}" width="44" height="44"/>
+    <image xlink:href="/static/img/logo/spy-logo.svg"
+           src="/static/img/logo/spy-logo.png" width="44" height="44"/>
   </svg>
   <a href="#home" class="brand">SPy o.z.</a>
 
@@ -65,28 +61,36 @@
   <label for="bmenub" class="burger pseudo button" id="menu">menu</label>
 
   <div class="menu">
-    {% block nav %}
-    <a href="{{ url_for('index', lang_code=lang_code) }}#home" class="pseudo button">{{ _('About Us') }}</a>
-    <a href="{{ url_for('index', lang_code=lang_code) }}#events" class="pseudo button">{{ _('Events') }}</a>
-    <a href="{{ url_for('index', lang_code=lang_code) }}#team" class="pseudo button">{{ _('Team') }}</a>
-    <a href="{{ url_for('index', lang_code=lang_code) }}#contact" class="pseudo button">{{ _('Contact') }}</a>
-    <a href="{{ url_for('support', lang_code=lang_code) }}" class="pseudo button">{{ _('Support Us') }}</a>
-    <a href="https://www.pycon.sk/{{ lang_code }}/" class="pseudo button external">PyCon SK</a>
-    {% endblock %}
-    {% if lang_code == 'sk' %}
-    <a href="{{ request.path|replace('/'+lang_code, '/en', 1) }}" class="lang-en" title="Switch to english language"
+    
+    <a href="/sk/index.html#home" class="pseudo button">About Us</a>
+    <a href="/sk/index.html#events" class="pseudo button">Events</a>
+    <a href="/sk/index.html#team" class="pseudo button">Team</a>
+    <a href="/sk/index.html#contact" class="pseudo button">Contact</a>
+    <a href="/sk/support.html" class="pseudo button">Support Us</a>
+    <a href="https://www.pycon.sk/sk/" class="pseudo button external">PyCon SK</a>
+    
+    
+    <a href="/" class="lang-en" title="Switch to english language"
        hreflang="en">&nbsp;</a>
-    {% else %}
-    <a href="{{ request.path|replace('/'+lang_code, '/sk', 1) }}" class="lang-sk" title="Prepnúť na slovenský jazyk"
-       hreflang="sk">&nbsp;</a>
-    {% endif %}
+    
   </div>
 </nav>
 
 <!-- Content -->
 <main>
-  {% block content %}{% endblock %}
-  {% block footer %}
+  
+<!-- Content -->
+<div class="section" id="home">
+  <div class="content">
+    <div class="content-text">
+	<p>You should have been automatically redirected to out new website.</p>
+	</p>Please follow the url: <a href="/sk/" target="blank">/sk/</a></p>
+    </div>
+  </div>
+</div>
+<!-- Content End -->
+
+  
   <footer>
     <div class="footer">
       <p class="socka">
@@ -115,13 +119,13 @@
       </p>
       <p class="copyleft">
         <i class="fa fa-creative-commons" aria-hidden="true"></i> 2015-2017 <a href="https://spy.pycon.sk">SPy o.z.</a>,
-        {{ _('content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
+        content licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank"
                                         class="external">CC-BY</a>,
-        except members avatars.') }}<span class="hide-900"> {{ _('Please consult with each SPy member, if you would like to use their avatar.') }}</span>
+        except members avatars.<span class="hide-900"> Please consult with each SPy member, if you would like to use their avatar.</span>
       </p>
     </div>
   </footer>
-  {% endblock %}
+  
 </main>
 
 </body>
