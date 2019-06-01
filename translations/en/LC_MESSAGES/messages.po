@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2018-04-19 23:35+0200\n"
+"POT-Creation-Date: 2019-06-01 23:11+0200\n"
 "PO-Revision-Date: 2018-04-19 23:28+0200\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -16,48 +16,50 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.5.1\n"
+"Generated-By: Babel 2.7.0\n"
 
 #: views.py:65
 msgid "PyCon SK"
 msgstr ""
 
-#: views.py:98
+#: views.py:114 views.py:120
 msgid "ProgressBar Calendar"
 msgstr ""
 
-#: views.py:104
+#: views.py:126
 msgid "Webstránka FIIT STU"
 msgstr ""
 
-#: views.py:110
+#: views.py:132
 msgid "Webstránka FabLab"
 msgstr ""
 
-#: views.py:116
+#: views.py:138
 msgid "Webstránka Gymnázium Jura Hronca"
 msgstr ""
 
-#: views.py:124 views.py:129 views.py:134 views.py:139 views.py:144
-#: views.py:149 views.py:162 views.py:192 views.py:395 views.py:479
-#: views.py:763
+#: views.py:146 views.py:151 views.py:156 views.py:161 views.py:166
+#: views.py:171 views.py:176 views.py:194 views.py:224 views.py:427
+#: views.py:511
 msgid "Profil na LinkedIn"
 msgstr ""
 
-#: views.py:156 views.py:174 views.py:186 views.py:203 views.py:229
-#: views.py:247 views.py:267 views.py:327 views.py:341 views.py:360
-#: views.py:378 views.py:389 views.py:405 views.py:421 views.py:452
-#: views.py:473 views.py:513 views.py:541 views.py:585 views.py:597
-#: views.py:606 views.py:622 views.py:653 views.py:662 views.py:684
-#: views.py:710 views.py:725 views.py:758 views.py:789
+#: views.py:188 views.py:206 views.py:218 views.py:235 views.py:261
+#: views.py:279 views.py:299 views.py:359 views.py:373 views.py:392
+#: views.py:410 views.py:421 views.py:437 views.py:453 views.py:484
+#: views.py:505 views.py:545 views.py:573 views.py:617 views.py:629
+#: views.py:638 views.py:654 views.py:685 views.py:694 views.py:716
+#: views.py:742 views.py:757 views.py:777 views.py:796 views.py:835
+#: views.py:874 views.py:890 views.py:914 views.py:929 views.py:976
+#: views.py:1012
 msgid "Bratislavský Python Meetup"
 msgstr ""
 
-#: views.py:458
+#: views.py:490
 msgid "Profil na GitHube"
 msgstr ""
 
-#: views.py:560
+#: views.py:592
 msgid "Prague, Czech Republic"
 msgstr ""
 
@@ -67,27 +69,27 @@ msgid ""
 "the Python programming language in Slovakia."
 msgstr ""
 
-#: templates/body.html:68 templates/index.html:7
+#: templates/body.html:69 templates/index.html:7
 msgid "About Us"
 msgstr ""
 
-#: templates/body.html:69 templates/index.html:48
+#: templates/body.html:70 templates/index.html:48
 msgid "Events"
 msgstr ""
 
-#: templates/body.html:70
+#: templates/body.html:71
 msgid "Team"
 msgstr ""
 
-#: templates/body.html:71
+#: templates/body.html:72
 msgid "Contact"
 msgstr ""
 
-#: templates/body.html:72
+#: templates/body.html:73
 msgid "Support Us"
 msgstr ""
 
-#: templates/body.html:117
+#: templates/body.html:118
 msgid ""
 "content licensed under <a "
 "href=\"https://creativecommons.org/licenses/by/4.0/\" target=\"_blank\"\n"
@@ -95,7 +97,7 @@ msgid ""
 "        except members avatars."
 msgstr ""
 
-#: templates/body.html:119
+#: templates/body.html:120
 msgid ""
 "Please consult with each SPy member, if you would like to use their "
 "avatar."
@@ -277,5 +279,14 @@ msgstr ""
 
 #: templates/index.html:212
 msgid "Find us online"
+msgstr ""
+
+#: templates/redirect.html:7
+msgid "You should have been automatically redirected to out new website."
+msgstr ""
+
+#: templates/redirect.html:8
+#, python-format
+msgid "Please follow the url: <a href=\"%(url)s\" target=\"blank\">%(url)s</a>"
 msgstr ""
 
