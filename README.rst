@@ -53,11 +53,11 @@ Other option is to translate directly in the translation source files. Translati
 
 - collect translation strings from Flask app::
 
-    pybabel extract -F babel.cfg -o messages.pot .
+    pybabel extract -F translations/babel.cfg -o translations/messages.pot .
 
 - update translation ``messages.po`` files with collected translation strings::
 
-    pybabel update -i messages.pot -d translations
+    pybabel update -i translations/messages.pot -d translations
 
 - compile translated messages and generate ``messages.po`` files::
 
