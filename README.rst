@@ -30,12 +30,12 @@ Installation
 
 - clone repository locally::
 
-    git clone https://github.com/pyconsk/spy.python.sk.git
-    cd spy.python.sk
+    git clone https://github.com/pyconsk/www.spyoz.eu.git
+    cd www.spyoz.eu
 
 - creates a virtual environment, activate it and installs all requirements::
 
-    python3.6 -m venv envs3
+    python3 -m venv envs3
     source envs3/bin/activate
     pip install -r requirements.txt --no-binary :all:
 
@@ -82,8 +82,7 @@ Generate static site
 Links
 -----
 
-- web: https://spy.pycon.sk https://spy.python.sk
-- chat: https://riot.python.sk
+- web: https://www.spyoz.eu
 - facebook: https://facebook.com/pyconsk
 - twitter: https://twitter.com/pyconsk
 
