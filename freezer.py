@@ -5,6 +5,9 @@ LANGUAGES = (
     {'lang_code': 'sk'},
     {'lang_code': 'en'}
 )
+
+app.config['FREEZER_DESTINATION'] = 'docs'  # GitHub pages directory for static site
+
 freezer = Freezer(app)
 
 
